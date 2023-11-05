@@ -1,0 +1,29 @@
+---
+-
+  title: "1.00"
+  url: "https://wanderinginn.com/2017/03/03/rw1-00/"
+  prereqs: null
+-
+  title: "1.01"
+  url: "https://wanderinginn.com/2017/03/03/rw1-01/"
+  prereqs: ["1.00"]
+- 
+  title: "Interlude - The Great Ritual"
+  url: "https://wanderinginn.com/2017/03/03/rwinterlude-the-great-ritual/"
+  prereqs: null
+-
+  title: "1.19 R"
+  url: "https://wanderinginn.com/2017/03/03/rw1-19-r/"
+  prereqs: null
+-
+  title: "1.20 R"
+  url: "https://wanderinginn.com/2017/03/03/rw1-20-r/"
+  prereqs: "1.19 R"
+-
+  title: "1.62"
+  url: "https://wanderinginn.com/2017/03/04/rw1-62/"
+  prereqs: ["1.01"]
+-
+  title: "1.63"
+  url: "https://wanderinginn.com/2017/03/04/rw1-63/"
+  prereqs: ["1.01", "1.20 R"]
