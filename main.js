@@ -27,7 +27,7 @@ for(let i = 0; i < timeline.length; i++) {
             {dash: true}
         );
     }
-    prev = info.title;
+    prev = info;
 }
 
 function drawArrows(info, prev) {
@@ -36,23 +36,16 @@ function drawArrows(info, prev) {
     // You can still manually specify a title, and you'll have to if
     // there's multiple parents.
     if (info.prereqs == "p") { 
-        let start = "c" + chapters[prev].id;
+        info.prereqs = [prev.title];
+    }
+    for (let j = 0; j < info.prereqs.length; j++) {
+        let start = "c" + chapters[info.prereqs[j]].id;
         let end = "c" + info.id;
 
         new LeaderLine(
             document.getElementById(start),
             document.getElementById(end),
         );
-    } else {
-        for (let j = 0; j < info.prereqs.length; j++) {
-            let start = "c" + chapters[info.prereqs[j]].id;
-            let end = "c" + info.id;
-
-            new LeaderLine(
-                document.getElementById(start),
-                document.getElementById(end),
-            );
-        }
     }
 }
 
@@ -90,12 +83,15 @@ function addSprites(node, info) {
     
         for(let i = 0; i < info.povs.length; i++) {
             let char = info.povs[i];
+
+            let span = document.createElement("span");
+            span.className = "povSprite";
+
+            span.title = char;
             if (!existingSprites.includes(char)) {
                 char = "unknown";
             }
 
-            let span = document.createElement("span");
-            span.className = "povSprite";
             // span.src = "sprites/" + char + "-sprite.png";
             span.style = "height: 16px; width: 16px; background-image: url(sprites/" + char + "-sprite.png);";
             charDiv.append(span);
@@ -109,12 +105,15 @@ function addSprites(node, info) {
     
         for(let i = 0; i < info.povs.length; i++) {
             let char = info.guests[i];
+
+            let span = document.createElement("span");
+            span.className = "guestSprite";
+
+            span.title = char;
             if (!existingSprites.includes(char)) {
                 char = "unknown";
             }
 
-            let span = document.createElement("span");
-            span.className = "guestSprite";
             // span.src = "sprites/" + char + "-sprite.png";
             span.style = "height: 16px; width: 16px; background-image: url(sprites/" + char + "-sprite.png);";
             charDiv.append(span);
