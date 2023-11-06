@@ -40,7 +40,7 @@ for(let i = 0; i < timeline.length; i++) {
         case 6: place = 5; break;
         default: place = -1; // this should never happen
     }
-    document.getElementById("cell-" + i + "-" + place).append(node);
+    cell(i, place).append(node);
 
     if(info.prereqs) {
         drawArrows(info, prev);
@@ -60,11 +60,11 @@ for(let i = 0; i < timeline.length; i++) {
         link.append(heading);    
         portal.append(link);
 
-        document.getElementById("cell-" + (i-1) + "-" + place).append(portal);
+        cell(i-1, place).append(portal);
         
         new LeaderLine(
             portal,
-            document.getElementById("c" + info.id),
+            tile(info.id),
             {dash: true}
         );
     }
@@ -75,15 +75,23 @@ for(let i = 0; i < timeline.length; i++) {
     if(info.type == "jump") {
         let portal = document.createElement("div");
         portal.className = "portal";
-        document.getElementById("cell-" + (i+1) + "-" + place).append(portal);
+        cell(i+1, place).append(portal);
 
         new LeaderLine(
-            document.getElementById("c" + info.id), 
+            tile(info.id), 
             portal,
             {dash: true}
         );
     }
     prev = info;
+}
+
+function cell(r, c) {
+    return document.getElementById("cell-" + r + "-" + c);
+}
+
+function tile(id) {
+    return document.getElementById("c" + id);
 }
 
 function drawArrows(info, prev) {
@@ -95,12 +103,12 @@ function drawArrows(info, prev) {
         info.prereqs = [prev.title];
     }
     for (let j = 0; j < info.prereqs.length; j++) {
-        let start = "c" + chapters[info.prereqs[j]].id;
-        let end = "c" + info.id;
+        let start = chapters[info.prereqs[j]].id;
+        let end = info.id;
 
         new LeaderLine(
-            document.getElementById(start),
-            document.getElementById(end),
+            tile(start),
+            tile(end),
         );
     }
 }
