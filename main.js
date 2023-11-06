@@ -48,7 +48,7 @@ for(let i = 0; i < timeline.length; i++) {
         link.title = predecessor.title;
     
         let heading = document.createTextNode(predecessor.title);
-        link.append(heading);    
+        link.append(heading);
         portal.append(link);
 
         cell(i-1, place).append(portal);
@@ -112,7 +112,15 @@ function drawArrows(info, prev) {
         let sCol = placeFor(chapters[info.prereqs[j]].rank);
         let eCol = placeFor(info.rank);
 
-        let socketDest = "top";
+        let socketStart = "bottom";
+        let socketDest  = "top";
+
+        if(sCol < eCol) {
+            socketStart = "right";
+        } else if (sCol > eCol) {
+            socketStart = "left";
+        }
+
         if(sCol < eCol) {
             socketDest = "left";
         } else if (sCol > eCol) {
@@ -122,7 +130,7 @@ function drawArrows(info, prev) {
         new LeaderLine(
             tile(start),
             tile(end),
-            {startSocket: 'bottom',
+            {startSocket: socketStart,
              endSocket: socketDest}
         );
     }
@@ -142,24 +150,26 @@ function createNode(info) {
         node.append(dataPanel);
     }
 
+    var linkContainer = document.createElement("div");
     var link = document.createElement("a");
     link.href = info.url;
     link.title = info.title;
 
     var heading = document.createTextNode(info.title);
     link.append(heading);    
-    node.append(link);
+    linkContainer.append(link);
+    node.append(linkContainer);
 
-    addSprites(node, info);
+    var spriteContainer = document.createElement("div");
+    spriteContainer.className = "spriteContainer";
+    addSprites(spriteContainer, info);
+    node.append(spriteContainer);
 
     return node;
 }
 
 function addSprites(node, info) {
     if(info.povs) {
-        let charDiv = document.createElement("span");
-        charDiv.className = "povList";
-    
         for(let i = 0; i < info.povs.length; i++) {
             let char = info.povs[i];
 
@@ -172,17 +182,13 @@ function addSprites(node, info) {
             }
 
             // span.src = "sprites/" + char + "-sprite.png";
-            span.style = "height: 16px; width: 16px; background-image: url(sprites/" + char + "-sprite.png);";
-            charDiv.append(span);
+            span.style = "background-image: url(sprites/" + char + "-sprite.png);";
+            node.append(span);
         }
-        node.append(charDiv);
     }
 
     if(info.guests) {
-        let charDiv = document.createElement("span");
-        charDiv.className = "guestList";
-    
-        for(let i = 0; i < info.povs.length; i++) {
+        for(let i = 0; i < info.guests.length; i++) {
             let char = info.guests[i];
 
             let span = document.createElement("span");
@@ -193,10 +199,9 @@ function addSprites(node, info) {
                 char = "unknown";
             }
 
-            span.style = "height: 16px; width: 16px; background-image: url(sprites/" + char + "-sprite.png);";
-            charDiv.append(span);
+            span.style = "background-image: url(sprites/" + char + "-sprite.png);";
+            node.append(span);
         }
-        node.append(charDiv);
     }
 }
 

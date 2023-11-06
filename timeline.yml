@@ -355,12 +355,14 @@
   prereqs: ["1.51"]
   rank: 1
   povs: [erin]
+  guests: [horns]
 -
   title: "1.54"
   url: "https://wanderinginn.com/2017/03/04/rw1-54/"
   prereqs: p
   rank: 1
   povs: [erin]
+  guests: [horns]
 -
   title: "1.55 R"
   url: "https://wanderinginn.com/2017/03/04/rw1-55-r/"
@@ -373,6 +375,7 @@
   prereqs: ["1.54"]
   rank: 1
   povs: [erin]
+  guests: [horns]
 -
   title: "1.57 H"
   url: "https://wanderinginn.com/2017/03/04/rw1-57-h/"
