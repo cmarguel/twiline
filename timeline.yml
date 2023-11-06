@@ -153,6 +153,7 @@
   prereqs: null
   rank: 2
   povs: [ryoka]
+  from: Interlude - The Great Ritual
   catchup: "This chapter focuses on a character introduced in Interlude - The Great Ritual."
 -
   id: 21

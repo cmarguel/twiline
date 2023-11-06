@@ -18,6 +18,23 @@ for(let i = 0; i < timeline.length; i++) {
     if(info.prereqs) {
         drawArrows(info, prev);
     }
+
+    // This part should create a dashed arrow coming from above, for threads continued from very far above.
+    // if(info.from) {
+    //     new LeaderLine(
+    //         LeaderLine.areaAnchor({element: document.getElementById("c" + info.id), shape: "circle", y: "-550px"}),
+    //         document.getElementById("c" + info.id),
+    //         {dash: true}
+    //     );
+    // }
+
+    // This section adds a dummy node for dashed lines to extend outwards to.
+    // Use dashed lines if a node simply has too many children, or if 
+    // the solid arrow it would otherwise draw is unreasonably long.
+    // Note: The dummy node is an additional spacer added into the column. 
+    // This means that the parent column divs will not actually be of equal size.
+    // That might be a problem later.
+    // TODO: Ensure parent column div sizes are equal. 
     if(info.type == "jump") {
         addSpacer(info.rank);
         let spacer = addSpacer(info.rank);
@@ -114,7 +131,6 @@ function addSprites(node, info) {
                 char = "unknown";
             }
 
-            // span.src = "sprites/" + char + "-sprite.png";
             span.style = "height: 16px; width: 16px; background-image: url(sprites/" + char + "-sprite.png);";
             charDiv.append(span);
         }
