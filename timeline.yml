@@ -199,6 +199,7 @@
   povs: [flos]
   catchup: "This chapter focuses on multiple characters introduced in Interlude - The Great Ritual."
   type: jump
+  from: Interlude - The Great Ritual
 -
   id: 27
   title: "1.25"

@@ -4,7 +4,21 @@ let existingSprites = ["erin", "ryoka", "horns"];
 
 yamlString = YAML.stringify(timeline);
 
-// addSpacers(0);
+
+// prepopulate the timeline with empty cells
+for(let r = 0; r < timeline.length; r++) {
+    for(let c = 0; c < 5; c++) {
+        let gridItem = document.createElement("div");
+        gridItem.className = "nodeContainer";
+        gridItem.id = "cell-" + r + "-" + c;
+
+        //let textNode = document.createTextNode("cell-" +  r + "-" + c);
+        //gridItem.append(textNode);
+
+        document.getElementById("timeline").append(gridItem);
+    }
+}
+
 let prev = null;
 for(let i = 0; i < timeline.length; i++) {
     let info = timeline[i];
@@ -12,35 +26,59 @@ for(let i = 0; i < timeline.length; i++) {
     
     let node = createNode(info);
 
-    document.getElementById("rank" + info.rank).appendChild(node);
-    addSpacers(info.rank);
+    // document.getElementById("rank" + info.rank).appendChild(node);
+    // rank is a node's importance, but it doesn't correspond to a left to right
+    // indexing. The rank of each column is actually: 4 2 1 3 5 (6 goes here if ever we need it)
+    let place = 0;
+    switch(info.rank) {
+        case 1: place = 2; break;
+        case 2: place = 1; break;
+        case 3: place = 3; break;
+        case 4: place = 0; break;
+        case 5: place = 4; break;
+        case 6: place = 5; break;
+        default: place = -1; // this should never happen
+    }
+    document.getElementById("cell-" + i + "-" + place).append(node);
 
     if(info.prereqs) {
         drawArrows(info, prev);
     }
 
     // This part should create a dashed arrow coming from above, for threads continued from very far above.
-    // if(info.from) {
-    //     new LeaderLine(
-    //         LeaderLine.areaAnchor({element: document.getElementById("c" + info.id), shape: "circle", y: "-550px"}),
-    //         document.getElementById("c" + info.id),
-    //         {dash: true}
-    //     );
-    // }
+    if(info.from) {
+        let portal = document.createElement("div");
+        portal.className = "portal";
+
+        let predecessor = chapters[info.from];
+        let link = document.createElement("a");
+        link.href = predecessor.url;
+        link.title = predecessor.title;
+    
+        let heading = document.createTextNode(predecessor.title);
+        link.append(heading);    
+        portal.append(link);
+
+        document.getElementById("cell-" + (i-1) + "-" + place).append(portal);
+        
+        new LeaderLine(
+            portal,
+            document.getElementById("c" + info.id),
+            {dash: true}
+        );
+    }
 
     // This section adds a dummy node for dashed lines to extend outwards to.
     // Use dashed lines if a node simply has too many children, or if 
     // the solid arrow it would otherwise draw is unreasonably long.
-    // Note: The dummy node is an additional spacer added into the column. 
-    // This means that the parent column divs will not actually be of equal size.
-    // That might be a problem later.
-    // TODO: Ensure parent column div sizes are equal. 
     if(info.type == "jump") {
-        addSpacer(info.rank);
-        let spacer = addSpacer(info.rank);
+        let portal = document.createElement("div");
+        portal.className = "portal";
+        document.getElementById("cell-" + (i+1) + "-" + place).append(portal);
+
         new LeaderLine(
-            document.getElementById("c" + info.id),
-            spacer,
+            document.getElementById("c" + info.id), 
+            portal,
             {dash: true}
         );
     }
@@ -138,18 +176,4 @@ function addSprites(node, info) {
     }
 }
 
-function addSpacers(rank) {
-    for (let r = 1; r <= 5; r++) {
-        if (r != rank) {
-            addSpacer(r);
-        }
-    }
-}
-
-function addSpacer(r) {
-    let spacer = document.createElement("div");
-    spacer.className = "spacer node";
-    document.getElementById("rank" + r).appendChild(spacer);
-    return spacer;
-}
 
