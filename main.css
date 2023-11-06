@@ -123,13 +123,13 @@ body {
 .povList, .guestList {
     margin-top:10px;
     padding: 2px;
-    float:left;
+    display:block;
     /* background-color: #232341; */
 }
 
 .povSprite {
     margin:2px;
-    float:left;
+    display:block;
 
     -webkit-filter: drop-shadow(1px 1px 0 yellow)
     drop-shadow(-1px -1px 0 yellow);
@@ -139,7 +139,7 @@ body {
 
 .guestSprite {
     margin:2px;
-    float:left;
+    display:block;
 
     -webkit-filter: drop-shadow(1px 1px 0 rgb(110, 110, 255))
     drop-shadow(-1px -1px 0 rgb(110, 110, 255));

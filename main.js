@@ -30,16 +30,7 @@ for(let i = 0; i < timeline.length; i++) {
     // document.getElementById("rank" + info.rank).appendChild(node);
     // rank is a node's importance, but it doesn't correspond to a left to right
     // indexing. The rank of each column is actually: 4 2 1 3 5 (6 goes here if ever we need it)
-    let place = 0;
-    switch(info.rank) {
-        case 1: place = 2; break;
-        case 2: place = 1; break;
-        case 3: place = 3; break;
-        case 4: place = 0; break;
-        case 5: place = 4; break;
-        case 6: place = 5; break;
-        default: place = -1; // this should never happen
-    }
+    let place = placeFor(info.rank);
     cell(i, place).append(node);
 
     if(info.prereqs) {
@@ -86,6 +77,18 @@ for(let i = 0; i < timeline.length; i++) {
     prev = info;
 }
 
+function placeFor(rank) {
+    switch(rank) {
+        case 1: return 2; 
+        case 2: return 1; 
+        case 3: return 3; 
+        case 4: return 0; 
+        case 5: return 4; 
+        case 6: return 5; 
+        default: return -1; // this should never happen
+    }
+}
+
 function cell(r, c) {
     return document.getElementById("cell-" + r + "-" + c);
 }
@@ -106,9 +109,21 @@ function drawArrows(info, prev) {
         let start = chapters[info.prereqs[j]].id;
         let end = info.id;
 
+        let sCol = placeFor(chapters[info.prereqs[j]].rank);
+        let eCol = placeFor(info.rank);
+
+        let socketDest = "top";
+        if(sCol < eCol) {
+            socketDest = "left";
+        } else if (sCol > eCol) {
+            socketDest = "right";
+        }
+
         new LeaderLine(
             tile(start),
             tile(end),
+            {startSocket: 'bottom',
+             endSocket: socketDest}
         );
     }
 }
@@ -142,7 +157,7 @@ function createNode(info) {
 
 function addSprites(node, info) {
     if(info.povs) {
-        let charDiv = document.createElement("div");
+        let charDiv = document.createElement("span");
         charDiv.className = "povList";
     
         for(let i = 0; i < info.povs.length; i++) {
@@ -164,7 +179,7 @@ function addSprites(node, info) {
     }
 
     if(info.guests) {
-        let charDiv = document.createElement("div");
+        let charDiv = document.createElement("span");
         charDiv.className = "guestList";
     
         for(let i = 0; i < info.povs.length; i++) {
