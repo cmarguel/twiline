@@ -7,6 +7,7 @@ yamlString = YAML.stringify(timeline);
 
 // prepopulate the timeline with empty cells
 for(let r = 0; r < timeline.length; r++) {
+    timeline[r].id = r;
     for(let c = 0; c < 5; c++) {
         let gridItem = document.createElement("div");
         gridItem.className = "nodeContainer";

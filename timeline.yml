@@ -1,6 +1,5 @@
 ---
 -
-  id: 0
   title: "1.00"
   url: "https://wanderinginn.com/2017/03/03/rw1-00/"
   prereqs: null
@@ -11,143 +10,121 @@
           threads have converged here, and you can hover over them (or tap, if you're on mobile) to get a quick
           overview of what points from each thread you might need to know--in case you 
           forgot, or skipped a few chapters.
-
-
 -
-  id: 1
   title: "1.01"
   url: "https://wanderinginn.com/2017/03/03/rw1-01/"
   prereqs: ["1.00"]
   rank: 1
   povs: [erin]
 -
-  id: 2
   title: "1.02"
   url: "https://wanderinginn.com/2017/03/03/rw1-02/"
   prereqs: ["1.01"]
   rank: 1
   povs: [erin]
 -
-  id: 3
   title: "1.03"
   url: "https://wanderinginn.com/2017/03/03/rw1-03/"
   prereqs: ["1.02"]
   rank: 1
   povs: [erin]
 -
-  id: 4
   title: "1.04"
   url: "https://wanderinginn.com/2017/03/03/rw1-04/"
   prereqs: ["1.03"]
   rank: 1
   povs: [erin]
 -
-  id: 5
   title: "1.05"
   url: "https://wanderinginn.com/2017/03/03/rw1-05/"
   prereqs: ["1.04"]
   rank: 1
   povs: [erin]
 -
-  id: 6
   title: "1.06"
   url: "https://wanderinginn.com/2017/03/03/rw1-06/"
   prereqs: ["1.05"]
   rank: 1
   povs: [erin]
 -
-  id: 7
   title: "1.07"
   url: "https://wanderinginn.com/2017/03/03/rw1-07/"
   prereqs: ["1.06"]
   rank: 1
   povs: [erin]
 -
-  id: 8
   title: "1.08"
   url: "https://wanderinginn.com/2017/03/03/rw1-08/"
   prereqs: ["1.07"]
   rank: 1
   povs: [erin]
 -
-  id: 9
   title: "1.09"
   url: "https://wanderinginn.com/2017/03/03/rw1-09/"
   prereqs: ["1.08"]
   rank: 1
   povs: [erin]
 -
-  id: 10
   title: "1.10"
   url: "https://wanderinginn.com/2017/03/03/rw1-10/"
   prereqs: ["1.09"]
   rank: 1
   povs: [erin]
 - 
-  id: 11
   title: "Interlude - The Great Ritual"
   url: "https://wanderinginn.com/2017/03/03/rwinterlude-the-great-ritual/"
   prereqs: null
   rank: 4
   type: jump
 -
-  id: 12
   title: "1.11"
   url: "https://wanderinginn.com/2017/03/03/rw1-10/"
   prereqs: ["1.10"]
   rank: 1
   povs: [erin]
 -
-  id: 13
   title: "1.12"
   url: "https://wanderinginn.com/2017/03/03/rw1-12/"
   prereqs: ["1.11"]
   rank: 1
   povs: [erin]
 -
-  id: 14
   title: "1.13"
   url: "https://wanderinginn.com/2017/03/03/rw1-13/"
   prereqs: ["1.12"]
   rank: 1
   povs: [erin]
 -
-  id: 15
   title: "1.14"
   url: "https://wanderinginn.com/2017/03/03/rw1-14/"
   prereqs: ["1.13"]
   rank: 1
   povs: [erin]
 -
-  id: 16
   title: "1.15"
   url: "https://wanderinginn.com/2017/03/03/rw1-15/"
   prereqs: ["1.14"]
   rank: 1
   povs: [erin]
 -
-  id: 17
   title: "1.16"
   url: "https://wanderinginn.com/2017/03/03/rw1-16/"
   prereqs: ["1.15"]
   rank: 1
   povs: [erin]
 -
-  id: 18
   title: "1.17"
   url: "https://wanderinginn.com/2017/03/03/rw1-17/"
   prereqs: ["1.16"]
   rank: 1
   povs: [erin]
 -
-  id: 19
   title: "1.18"
   url: "https://wanderinginn.com/2017/03/03/rw1-18/"
   prereqs: ["1.17"]
   rank: 1
   povs: [erin]
 -
-  id: 20
   title: "1.19 R"
   url: "https://wanderinginn.com/2017/03/03/rw1-19-r/"
   prereqs: null
@@ -156,42 +133,36 @@
   from: Interlude - The Great Ritual
   catchup: "This chapter focuses on a character introduced in Interlude - The Great Ritual."
 -
-  id: 21
   title: "1.20 R"
   url: "https://wanderinginn.com/2017/03/03/rw1-20-r/"
   prereqs: ["1.19 R"]
   rank: 2
   povs: [ryoka]
 -
-  id: 22
   title: "1.21"
   url: "https://wanderinginn.com/2017/03/03/rw1-21/"
   prereqs: ["1.18"]
   rank: 1
   povs: [erin]
 -
-  id: 23
   title: "1.22"
   url: "https://wanderinginn.com/2017/03/03/rw1-22/"
   prereqs: ["1.21"]
   rank: 1
   povs: [erin]
 -
-  id: 24
   title: "1.23 A"
   url: "https://wanderinginn.com/2017/03/03/rw1-23-a/"
   prereqs: ["1.18"]
   rank: 3
   povs: [klbkch]
 -
-  id: 25
   title: "1.24"
   url: "https://wanderinginn.com/2017/03/04/rw1-24/"
   prereqs: ["1.22", "1.23 A"]
   rank: 1
   povs: [erin]
 -
-  id: 26
   title: "Interlude - King Edition"
   url: "https://wanderinginn.com/2017/03/04/rwinterlude-king-edition/"
   prereqs: null
@@ -201,56 +172,48 @@
   type: jump
   from: Interlude - The Great Ritual
 -
-  id: 27
   title: "1.25"
   url: "https://wanderinginn.com/2017/03/04/rw1-25/"
   prereqs: ["1.24"]
   rank: 1
   povs: [erin]
 -
-  id: 28
   title: "1.26 R"
   url: "https://wanderinginn.com/2017/03/04/rw1-26-r/"
   prereqs: ["1.20 R"]
   rank: 2
   povs: [ryoka]
 -
-  id: 29
   title: "1.27 R"
   url: "https://wanderinginn.com/2017/03/04/rw1-27-r/"
   prereqs: ["1.26 R"]
   rank: 2
   povs: [ryoka]
 -
-  id: 30
   title: "1.28 A"
   url: "https://wanderinginn.com/2017/03/04/rw1-28-a/"
   prereqs: ["1.25"]
   rank: 3
   povs: [klbkch]
 -
-  id: 31
   title: "1.29"
   url: "https://wanderinginn.com/2017/03/04/rw1-29/"
   prereqs: ["1.25", "1.28 A"]
   rank: 1
   povs: [erin]
 -
-  id: 32
   title: "1.30"
   url: "https://wanderinginn.com/2017/03/04/rw1-30/"
   prereqs: ["1.29"]
   rank: 1
   povs: [erin]
 -
-  id: 33
   title: "1.31"
   url: "https://wanderinginn.com/2017/03/04/rw1-31/"
   prereqs: ["1.30"]
   rank: 1
   povs: [erin]
 -
-  id: 34
   title: "1.32 R"
   url: "https://wanderinginn.com/2017/03/04/rw1-32-r/"
   prereqs: ["1.27 R"]
@@ -258,7 +221,6 @@
   povs: [ryoka]
   guests: [horns]
 -
-  id: 35
   title: "1.33 R"
   url: "https://wanderinginn.com/2017/03/04/rw1-33-r/"
   prereqs: p
@@ -266,14 +228,12 @@
   povs: [ryoka]
   guests: [horns]
 -
-  id: 36
   title: "1.34"
   url: "https://wanderinginn.com/2017/03/04/rw1-34/"
   prereqs: ["1.31"]
   rank: 1
   povs: [erin]
 -
-  id: 37
   title: "1.35 R"
   url: "https://wanderinginn.com/2017/03/04/rw1-35-r/"
   prereqs: ["1.34", "1.33 R"]
@@ -281,28 +241,24 @@
   povs: [ryoka]
   guests: [horns]
 -
-  id: 38
   title: "1.36"
   url: "https://wanderinginn.com/2017/03/04/rw1-36/"
   prereqs: ["1.34"]
   rank: 1
   povs: [erin]
 -
-  id: 39
   title: "1.37"
   url: "https://wanderinginn.com/2017/03/04/rw1-37/"
   prereqs: p
   rank: 1
   povs: [erin]
 -
-  id: 40
   title: "1.38"
   url: "https://wanderinginn.com/2017/03/04/rw1-38/"
   prereqs: p
   rank: 1
   povs: [erin]
 -
-  id: 41
   title: "1.39 R"
   url: "https://wanderinginn.com/2017/03/04/rw1-39-r/"
   prereqs: ["1.35 R"]
@@ -310,56 +266,48 @@
   povs: [ryoka]
   guests: [horns]
 -
-  id: 42
   title: "1.40 R"
   url: "https://wanderinginn.com/2017/03/04/rw1-40-r/"
   prereqs: p
   rank: 2
   povs: [ryoka]
 -
-  id: 43
   title: "1.41"
   url: "https://wanderinginn.com/2017/03/04/rw1-41/"
   prereqs: ["1.38"]
   rank: 1
   povs: [erin]
 -
-  id: 44
   title: "1.42"
   url: "https://wanderinginn.com/2017/03/04/rw1-42/"
   prereqs: p
   rank: 1
   povs: [erin]
 -
-  id: 45
   title: "1.43 R"
   url: "https://wanderinginn.com/2017/03/04/rw1-39-r/"
   prereqs: ["1.40 R"]
   rank: 2
   povs: [ryoka]
 -
-  id: 46
   title: "1.44 R"
   url: "https://wanderinginn.com/2017/03/04/rw1-44-r/"
   prereqs: p
   rank: 2
   povs: [ryoka]
 -
-  id: 47
   title: "1.45"
   url: "https://wanderinginn.com/2017/03/04/rw1-45/"
   prereqs: ["1.42"]
   rank: 1
   povs: [erin]
 -
-  id: 48
   title: "1.46"
   url: "https://wanderinginn.com/2017/03/04/rw1-46/"
   prereqs: p
   rank: 1
   povs: [erin]
 -
-  id: 49
   title: "1.47 R"
   url: "https://wanderinginn.com/2017/03/04/rw1-47-r/"
   prereqs: ["1.44 R"]
@@ -367,7 +315,6 @@
   povs: [ryoka]
   guests: [horns]
 -
-  id: 50
   title: "1.48 R"
   url: "https://wanderinginn.com/2017/03/04/rw1-48-r/"
   prereqs: p
@@ -375,7 +322,6 @@
   povs: [ryoka]
   guests: [horns]
 -
-  id: 51
   title: "1.49"
   url: "https://wanderinginn.com/2017/03/04/rw1-49/"
   prereqs: ["1.46", "1.48 R"]
@@ -384,7 +330,6 @@
   guests: [horns]
   catchup: "Ryoka very toxically cut ties with a team of adventurers she befriended--the same adventurers who now find themselves at The Wandering Inn."
 -
-  id: 52
   title: "1.50"
   url: "https://wanderinginn.com/2017/03/04/rw1-50/"
   prereqs: p
@@ -392,7 +337,6 @@
   povs: [erin]
   guests: [horns]
 -
-  id: 53
   title: "1.51"
   url: "https://wanderinginn.com/2017/03/04/rw1-51/"
   prereqs: p
@@ -400,84 +344,72 @@
   povs: [erin]
   guests: [horns]
 -
-  id: 54
   title: "1.52 R"
   url: "https://wanderinginn.com/2017/03/04/rw1-52-r/"
   prereqs: ["1.48 R"]
   rank: 2
   povs: [ryoka]
 -
-  id: 55
   title: "1.53"
   url: "https://wanderinginn.com/2017/03/04/rw1-51/"
   prereqs: ["1.51"]
   rank: 1
   povs: [erin]
 -
-  id: 56
   title: "1.54"
   url: "https://wanderinginn.com/2017/03/04/rw1-54/"
   prereqs: p
   rank: 1
   povs: [erin]
 -
-  id: 57
   title: "1.55 R"
   url: "https://wanderinginn.com/2017/03/04/rw1-55-r/"
   prereqs: ["1.52 R"]
   rank: 2
   povs: [ryoka]
 -
-  id: 58
   title: "1.56"
   url: "https://wanderinginn.com/2017/03/04/rw1-56/"
   prereqs: ["1.54"]
   rank: 1
   povs: [erin]
 -
-  id: 59
   title: "1.57 H"
   url: "https://wanderinginn.com/2017/03/04/rw1-57-h/"
   prereqs: ["1.56"]
   rank: 1
   povs: [horns]
 -
-  id: 60
   title: "1.58 H"
   url: "https://wanderinginn.com/2017/03/04/rw1-58-h/"
   prereqs: p
   rank: 1
   povs: [horns]
 -
-  id: 61
   title: "1.59 H"
   url: "https://wanderinginn.com/2017/03/04/rw1-59-h/"
   prereqs: p
   rank: 1
   povs: [horns]
 -
-  id: 62
   title: "1.60"
   url: "https://wanderinginn.com/2017/03/04/rw1-60/"
   prereqs: p
   rank: 1
   povs: [erin]
 -
-  id: 63
   title: "1.61"
   url: "https://wanderinginn.com/2017/03/04/rw1-61/"
   prereqs: p
   rank: 1
   povs: [erin]
 -
-  id: 64
   title: "1.62"
   url: "https://wanderinginn.com/2017/03/04/rw1-62/"
   prereqs: p
   rank: 1
   povs: [erin]
 -
-  id: 65
   title: "1.63"
   url: "https://wanderinginn.com/2017/03/04/rw1-63/"
   prereqs: ["1.62", "1.55 R"]
