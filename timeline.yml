@@ -7,9 +7,10 @@
   povs: [erin]
   catchup: >
           The start of the saga. If you see a node like this, it means important plot 
-          threads have converged here, and you can hover over them (or tap, if you're on mobile) to get a quick
-          overview of what points from each thread you might need to know--in case you 
-          forgot, or skipped a few chapters.
+          threads have converged here, and you can hover over them (or tap, if you're on mobile) 
+          to get a quick overview of what points from each thread you might need to know--in case 
+          you forgot, or skipped a few chapters. These nodes will have spoilers for preceding
+          chapters!
 -
   title: "1.01"
   url: "https://wanderinginn.com/2017/03/03/rw1-01/"
@@ -418,3 +419,7 @@
   prereqs: ["1.62", "1.55 R"]
   rank: 1
   povs: [erin, ryoka]
+  catchup: >
+    Following a brief adventure south of the city, Ryoka returns to Liscor, where she finds
+    it in shambles after an attack by a giant monster from the dungeon--a monster defeated 
+    with key contributions from Erin Solstice and Rags' band of goblins. 
