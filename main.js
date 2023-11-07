@@ -119,25 +119,26 @@ function drawArrows(info, prev) {
         let eCol = placeFor(info.rank);
 
         let socketStart = "bottom";
-        let socketDest  = "top";
-
-        if(sCol < eCol) {
+        let socketEnd  = "top";
+        
+        if (sCol < eCol && eCol <= 2) {
+            socketEnd = "left";
+        } else if (sCol < eCol && sCol >= 2) {
             socketStart = "right";
-        } else if (sCol > eCol) {
+        } else if (sCol > eCol && sCol <= 2) {
             socketStart = "left";
-        }
-
-        if(sCol < eCol) {
-            socketDest = "left";
-        } else if (sCol > eCol) {
-            socketDest = "right";
+        } else if (sCol > eCol && eCol >= 2) {
+            socketEnd = "right";
+        } else if (sCol != 2 && eCol != 2) {
+            socketStart = "auto";
+            socketEnd = "auto";
         }
 
         new LeaderLine(
             tile(start),
             tile(end),
             {startSocket: socketStart,
-             endSocket: socketDest,
+             endSocket: socketEnd,
             dropShadow: {dx:-3, dy:-3}}
         );
     }
