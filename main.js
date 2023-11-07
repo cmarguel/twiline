@@ -77,6 +77,12 @@ for(let i = 0; i < timeline.length; i++) {
     prev = info;
 }
 
+// LeaderLine doesn't draw arrows quite right at the start, but resizing the window
+// corrects it--this leads me to think it's drawing arrows using an outdated DOM,
+// but I can't figure out where that's happening. So I cheat and just trigger the 
+// resize event... which might be costly later on but should be okay for now.
+window.dispatchEvent(new Event('resize'));
+
 function placeFor(rank) {
     switch(rank) {
         case 1: return 2; 
