@@ -1,6 +1,11 @@
 body {
     background-color: #212133;
 
+    background-image: url("bg/erin-bg.png");
+    background-position: left bottom; /*Positioning*/
+    background-repeat: no-repeat; /*Prevent showing multiple background images*/
+    background-size: 70%;
+     
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -29,6 +34,8 @@ body {
     text-align: center;
     border-radius: 6px;
     padding:10px;
+
+    margin: auto;
 }
 
 .nodeContainer {
@@ -37,12 +44,18 @@ body {
     border-color:#000000;
     border-style:dotted; */
     margin:auto;
+    width:100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .node {
-    /*background-color: #2d2d46;
-    /* background-color: #b0e3f0; */
-    background-color: rgba(0x4d, 0x4d, 0x96, 0.7);
+    background-color: #2d2d46;
+    /* background-color: #b0e3f0; 
+    background-color: rgba(0x4d, 0x4d, 0x96, 0.7); */
 
     border-color:#9398df;
     border-width:2px;
@@ -51,6 +64,7 @@ body {
 
     min-width: 50px;
     max-width: 100px;
+    width:min-content;
     height:min-content;
     min-height: 50px; 
 
@@ -59,8 +73,8 @@ body {
     margin-top: 40px;
     margin-bottom: 40px;
     padding: 5px;
-/* 
-    filter: drop-shadow(-5px -5px 5px black); */
+ 
+    filter: drop-shadow(-5px -5px 5px black); 
 }
 
 .dataNode {
