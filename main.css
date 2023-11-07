@@ -66,7 +66,7 @@ body {
 }
 
 .leader-line {
-    z-index: 999;
+    z-index: 950;
 }
 
 #timeline {
@@ -88,7 +88,7 @@ body {
     border-color: white;
     border-width:1px;
     border-radius: 10px;
-    z-index: 100;
+    z-index: 999;
     margin: 20px;
 
     font-family: luminari, fantasy;
