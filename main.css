@@ -1,16 +1,76 @@
 body {
     background-color: #212133;
 
-    background-image: url("bg/erin-bg.png");
-    background-position: left bottom; /*Positioning*/
-    background-repeat: no-repeat; /*Prevent showing multiple background images*/
+    background-image: url("bg/wood-bg.jpg");
+    background-repeat: repeat;
     background-size: 70%;
      
     font-family: Arial, Helvetica, sans-serif;
 }
 
+#bgLayer1 {
+    /* background-image: url("bg/erin-bg.png"); */
+    background-position: left bottom; /*Positioning*/
+    background-repeat: no-repeat; /*Prevent showing multiple background images*/
+    background-size: 70%;
+
+}
+
+#erinWrapper {
+    height:100%;
+    position: relative;
+}
+
+#erin {
+    position:absolute;
+    bottom:0;
+    left:0;
+
+    content: url("bg/erin-bg2.png");
+}
+
+#parallaxWrapper {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    
+    perspective: 1px;
+}
+
+.parallax::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: translateZ(-1px);
+    background-size: 100%;
+    z-index: -1;
+
+  }
+
+#parallaxbg1 {
+
+}
+
+#parallaxbg2 {
+    
+}
+
+.nodeContainer img {
+    position: absolute;
+
+    z-index: 150;
+    scale:50%;
+}
+
+.leader-line {
+    z-index: 999;
+}
+
 #timeline {
-    background-color: rgba(33,.33, 51, 0.2);
+    background-color: rgba(0, 5, 51, 0.7);
     border-radius: 20px;
 
     display: grid;
@@ -35,9 +95,9 @@ body {
     font-size: 30px;
     color: #9398df;
 
-    background-color: rgba(161, 161, 226, 0.3);
+    background-color: rgba(161, 161, 226, 0.7);
 
-    width: 100%;
+    width: 80%;
     height: min-content;
     padding: 10px; 
 
@@ -79,6 +139,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    overflow:visible;
+
 }
 
 .node {
@@ -105,6 +168,9 @@ body {
  
     filter: drop-shadow(-5px -5px 5px black); 
     backdrop-filter: blur(5px);
+    position:relative;
+    z-index: 200    ;
+
 }
 
 .dataNode {
@@ -201,7 +267,7 @@ body {
   
     /* Position the tooltip text */
     position: absolute;
-    z-index: 1;
+    z-index: 1000;
     bottom: -125%;
     left: 250%;
     margin-left: -60px;

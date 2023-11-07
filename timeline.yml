@@ -487,3 +487,39 @@
 - 
   title: The Wandering Inn - Volume 9
   heading: true
+-
+  title: "Dummy chapter 1"
+  url: "https://google.com"
+  prereqs: null
+  rank: 1
+  povs: [erin, shrek]
+-
+  title: "Dummy chapter 2"
+  url: "https://google.com"
+  prereqs: p
+  rank: 1
+  povs: [erin, shrek]
+-
+  title: "Dummy chapter 3"
+  url: "https://google.com"
+  prereqs: p
+  rank: 1
+  povs: [erin, shrek]
+-
+  title: "Dummy chapter 4"
+  url: "https://google.com"
+  prereqs: p
+  rank: 1
+  povs: [erin, shrek]
+-
+  title: "Dummy chapter 5"
+  url: "https://google.com"
+  prereqs: p
+  rank: 1
+  povs: [erin, shrek]
+-
+  title: "Dummy chapter 6"
+  url: "https://google.com"
+  prereqs: p
+  rank: 1
+  povs: [erin, shrek]

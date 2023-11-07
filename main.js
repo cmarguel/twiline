@@ -75,6 +75,13 @@ for(let i = 0; i < timeline.length; i++) {
     prev = info;
 }
 
+let relc = document.createElement("img");
+relc.src = "bg/relc.png"
+cell(8, 3).append(relc);
+let klb = document.createElement("img");
+klb.src = "bg/klb.png"
+cell(10, 1).append(klb);
+
 // LeaderLine doesn't draw arrows quite right at the start, but resizing the window
 // corrects it--this leads me to think it's drawing arrows using an outdated DOM,
 // but I can't figure out where that's happening. So I cheat and just trigger the 
