@@ -10,7 +10,8 @@ body {
 }
 
 #timeline {
-    /* background-color: #5555aa; */
+    background-color: rgba(33,.33, 51, 0.3);
+    border-radius: 20px;
 
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -53,9 +54,9 @@ body {
 }
 
 .node {
-    background-color: #2d2d46;
-    /* background-color: #b0e3f0; 
-    background-color: rgba(0x4d, 0x4d, 0x96, 0.7); */
+    /*background-color: #2d2d46;
+    /* background-color: #b0e3f0; */
+    background-color: rgba(128, 128, 200, .3); 
 
     border-color:#9398df;
     border-width:2px;
@@ -75,6 +76,7 @@ body {
     padding: 5px;
  
     filter: drop-shadow(-5px -5px 5px black); 
+    backdrop-filter: blur(5px);
 }
 
 .dataNode {
@@ -84,6 +86,11 @@ body {
 
 .node a, .portal a {
     clear:both;
+
+    text-shadow: -1px -1px 0    rgb(102, 38, 81),
+                 -1px  1px 0    rgb(102, 38, 81),
+                  1px -1px 0    rgb(102, 38, 81),
+                  1px  1px 0    rgb(102, 38, 81);
 }
 
 .node a:link, .portal a:link {

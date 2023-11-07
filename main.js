@@ -137,7 +137,8 @@ function drawArrows(info, prev) {
             tile(start),
             tile(end),
             {startSocket: socketStart,
-             endSocket: socketDest}
+             endSocket: socketDest,
+            dropShadow: {dx:-3, dy:-3}}
         );
     }
 }
