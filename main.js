@@ -4,24 +4,22 @@ let existingSprites = ["erin", "ryoka", "horns"];
 
 yamlString = YAML.stringify(timeline);
 
-
 // prepopulate the timeline with empty cells
 for(let r = 0; r < timeline.length; r++) {
     timeline[r].id = r;
-    for(let c = 0; c < 5; c++) {
-        let gridItem = document.createElement("div");
-        gridItem.className = "nodeContainer";
-        gridItem.id = "cell-" + r + "-" + c;
 
-        //let textNode = document.createTextNode("cell-" +  r + "-" + c);
-        //gridItem.append(textNode);
-
-        document.getElementById("timeline").append(gridItem);
+    if(timeline[r].heading) {
+        createHeading(timeline[r].title);
+    } else {
+        fillRowWithEmptyCells(r);
     }
 }
 
 let prev = null;
 for(let i = 0; i < timeline.length; i++) {
+    if (timeline[i].heading) {
+        continue;
+    }
     let info = timeline[i];
     chapters[info.title] = info;
     
@@ -82,6 +80,29 @@ for(let i = 0; i < timeline.length; i++) {
 // but I can't figure out where that's happening. So I cheat and just trigger the 
 // resize event... which might be costly later on but should be okay for now.
 window.dispatchEvent(new Event('resize'));
+
+/*** END ONLOAD CODE ***/
+
+/*** FUNCTIONS ***/
+function createHeading(title) {
+    let heading = document.createElement("div");
+    heading.className = "heading";
+    let titleText = document.createTextNode(title);
+    heading.append(titleText);
+    document.getElementById("timeline").append(heading);
+}
+
+function fillRowWithEmptyCells(r) {
+    for (let c = 0; c < 5; c++) {
+        let gridItem = document.createElement("div");
+        gridItem.className = "nodeContainer";
+        gridItem.id = "cell-" + r + "-" + c;
+
+        //let textNode = document.createTextNode("cell-" +  r + "-" + c);
+        //gridItem.append(textNode);
+        document.getElementById("timeline").append(gridItem);
+    }
+}
 
 function placeFor(rank) {
     switch(rank) {

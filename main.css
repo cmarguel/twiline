@@ -23,6 +23,32 @@ body {
     margin:auto;
 }
 
+.heading {
+    border-style: solid;
+    border-color: white;
+    border-width:1px;
+    border-radius: 10px;
+    z-index: 100;
+    margin: 20px;
+
+    font-size: 30px;
+    color: #9398df;
+
+    background-color: rgba(161, 161, 226, 0.3);
+
+    width: 100%;
+    height: min-content;
+    padding: 10px; 
+
+    grid-column-start: 1;
+    grid-column-end: 6;
+
+    text-shadow: -1px -1px 0    rgb(102, 38, 81),
+                -1px  1px 0    rgb(102, 38, 81),
+                1px -1px 0    rgb(102, 38, 81),
+                1px  1px 0    rgb(102, 38, 81);
+}
+
 .portal {
     border-style: dashed;
     border-color: #9398df;

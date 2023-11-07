@@ -1,5 +1,8 @@
 ---
 -
+  title: "The Wandering Inn - Volume 1"
+  heading: true
+-
   title: "1.00"
   url: "https://wanderinginn.com/2017/03/03/rw1-00/"
   prereqs: null
@@ -423,3 +426,64 @@
     Following a brief adventure south of the city, Ryoka returns to Liscor, where she finds
     it in shambles after an attack by a giant monster from the dungeon--a monster defeated 
     with key contributions from Erin Solstice and Rags' band of goblins. 
+- 
+  title: The Wandering Inn - Volume 2 - Fae and Fare
+  heading: true
+-
+  title: "Interlude - The Call"
+  url: "https://wanderinginn.com/2017/03/07/interlude-2/"
+  prereqs: null
+  rank: 2
+  povs: [earthers]
+  type: jump
+-
+  title: "2.00"
+  url: "https://wanderinginn.com/2017/03/12/2-01/"
+  prereqs: [1.63]
+  rank: 1
+  povs: [erin, ryoka]
+- 
+  title: The Wandering Inn - Volume 3 - Flowers of Esthelm
+  heading: true
+- 
+  title: Winter Solstice
+  heading: true
+- 
+  title: The Wandering Inn - Volume 4 - The Last Light
+  heading: true
+- 
+  title: The General of Izril
+  heading: true
+- 
+  title: The Wandering Inn - Volume 5 - Rains of Liscor
+  heading: true
+- 
+  title: Blood of Liscor
+  heading: true
+- 
+  title: Tears of Liscor
+  heading: true
+- 
+  title: The Wandering Inn - Volume 6 - The Wind Runner
+  heading: true
+- 
+  title: The Titan of Baleros
+  heading: true
+- 
+  title: Untitled v6 Book
+  heading: true
+- 
+  title: Untitled v6 Book
+  heading: true
+- 
+  title: Untitled v6 Book
+  heading: true
+- 
+  title: The Wandering Inn - Volume 7
+  heading: true
+- 
+  title: The Wandering Inn - Volume 8
+  heading: true
+- 
+  title: The Wandering Inn - Volume 9
+  heading: true
