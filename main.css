@@ -1,4 +1,10 @@
-body {
+html, body {
+    margin: 0;
+    padding: 0;
+    width:100%;
+    height: 100%;
+    box-sizing: border-box;
+
     background-color: #212133;
 
     background-image: url("bg/wood-bg.jpg");
@@ -9,6 +15,10 @@ body {
 
     max-width:100%;
 }
+
+*, *::before, *::after {
+    box-sizing: inherit; /* This ensures that all elements inherit box-sizing from the html/body */
+  }
 
 #info {
     background-color: rgba(128, 128, 200, .3); 
