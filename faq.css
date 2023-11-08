@@ -1,0 +1,49 @@
+body {
+    background-color: #212133;
+
+    background-image: url("bg/wood-bg.jpg");
+    background-repeat: repeat;
+    background-size: 70%;
+     
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: rgb(209, 200, 243);
+    text-decoration: underline;
+}
+
+h2 {
+    color: #b1b1da;
+    font-weight: bold;
+}
+
+.answer {
+    width: 70%;
+    color: rgb(189, 199, 212);
+}
+
+#title {
+    margin:auto;
+
+    color: white;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+#faq {
+    background-color: rgba(0, 5, 51, 0.7);
+    border-radius: 20px;
+
+    width:85%;
+
+    text-align: justify;
+
+    justify-items: center;
+    margin: auto;
+    padding: 30px;
+}
+
+.code {
+    font-family: monospace;
+}
