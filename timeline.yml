@@ -448,32 +448,28 @@
   prereqs: [2.00]
   rank: 1
   povs: [erin, ryoka]
-  guests: [Klbch, Relc, Zevara, Selyss, Rags, Krishia, Pisces, Pawn, Ksvmr]
-  catchup: > Ryoka and Erin have just met, Relc takes Captain Zevara to the inn to meet Erin. 
+  guests: [klbkch, relc, zevara, selys, rags, krshia, pisces, pawn, ksvmr]
   -
  title: "2.02"
   url: "https://wanderinginn.com/2017/03/18/2-03/"
   prereqs: [2.01]
   rank: 1
   povs: [erin, ryoka]
-  guests: [Klbch, Toren, Zevara, Selyss, Rags, Krishia, Pisces, Ksvmr, Gazi]
-  catchup: > Pisces has announced that Ceria is still alive, Erin attempts to assemble a team to rescue her from the dungeon. 
+  guests: [klbkch, toren, zevara, selys, rags, krshia, pisces, ksvmr, gazi]
 -
  title: "2.03"
   url: "https://wanderinginn.com/2017/03/22/2-04/"
   prereqs: [2.02]
   rank: 1
   povs: [erin, ryoka]
-  guests: [Toren, Rags, Pisces, Ksvmr, Ceria, Olesm]
-  catchup: > Erin enters the dungeon with her team and fights some zombies while talking to Ryoka. 
+  guests: [toren, rags, pisces, ksvmr, ceria, olesm]
   -
   title: "2.04"
   url: "https://wanderinginn.com/2017/03/25/2-05/"
   prereqs: [2.03]
   rank: 1
   povs: [erin, ryoka]
-  guests: [Rags, Pisces, Ksvmr, Ceria, Olesm,Zevara, Gazi]
-  catchup: > Erin & Ryoka have found Ceria and Olesm alive after sheltering in stone coffins to hide from the undead. Pisces recovers the group message from Ryoka's phone
+  guests: [rags, pisces, ksvmr, ceria, olesm, zevara, gazi]
   -
   title: The Wandering Inn - Volume 3 - Flowers of Esthelm
   heading: true
