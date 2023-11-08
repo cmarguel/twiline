@@ -439,34 +439,34 @@
 -
   title: "2.00"
   url: "https://wanderinginn.com/2017/03/12/2-01/"
-  prereqs: [1.63]
+  prereqs: ["1.63"]
   rank: 1
   povs: [erin, ryoka]
 - 
   title: "2.01"
   url: "https://wanderinginn.com/2017/03/15/2-02/"
-  prereqs: [2.00]
+  prereqs: ["2.00"]
   rank: 1
   povs: [erin, ryoka]
   guests: [klbkch, relc, zevara, selys, rags, krshia, pisces, pawn, ksvmr]
 -
   title: "2.02"
   url: "https://wanderinginn.com/2017/03/18/2-03/"
-  prereqs: [2.01]
+  prereqs: ["2.01"]
   rank: 1
   povs: [erin, ryoka]
   guests: [klbkch, toren, zevara, selys, rags, krshia, pisces, ksvmr, gazi]
 -
   title: "2.03"
   url: "https://wanderinginn.com/2017/03/22/2-04/"
-  prereqs: [2.02]
+  prereqs: ["2.02"]
   rank: 1
   povs: [erin, ryoka]
   guests: [toren, rags, pisces, ksvmr, ceria, olesm]
 -
   title: "2.04"
   url: "https://wanderinginn.com/2017/03/25/2-05/"
-  prereqs: [2.03]
+  prereqs: ["2.03"]
   rank: 1
   povs: [erin, ryoka]
   guests: [rags, pisces, ksvmr, ceria, olesm, zevara, gazi]
