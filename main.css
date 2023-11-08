@@ -6,6 +6,8 @@ body {
     background-size: 70%;
      
     font-family: Arial, Helvetica, sans-serif;
+
+    max-width:100%;
 }
 
 #info {
@@ -25,48 +27,22 @@ body {
     background-repeat: no-repeat; /*Prevent showing multiple background images*/
     background-size: 70%;
 
+    max-width:100%;
+
 }
 
 #erinWrapper {
     height:100%;
     position: relative;
+
+    max-width:100%;
 }
 
 #erin {
     position:absolute;
     bottom:0;
-    left:0;
 
-    content: url("bg/erin-bg2.png");
-}
-
-#parallaxWrapper {
-    height: 100vh;
-    overflow-x: hidden;
-    overflow-y: auto;
-    
-    perspective: 1px;
-}
-
-.parallax::after {
-    content: " ";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    transform: translateZ(-1px);
-    background-size: 100%;
-    z-index: -1;
-
-  }
-
-#parallaxbg1 {
-
-}
-
-#parallaxbg2 {
-    
+    max-width:100%;
 }
 
 .nodeContainer img {
