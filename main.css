@@ -29,6 +29,7 @@ html, body {
     position:absolute;
     top: 110px;
     left: 150px;
+    z-index: 1001;
 }
 
 
