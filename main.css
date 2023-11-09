@@ -31,28 +31,16 @@ html, body {
     left: 150px;
 }
 
-#bgLayer1 {
-    /* background-image: url("bg/erin-bg.png"); */
-    background-position: left bottom; /*Positioning*/
-    background-repeat: no-repeat; /*Prevent showing multiple background images*/
-    background-size: 70%;
-
-    max-width:100%;
-
-}
-
-#erinWrapper {
-    height:100%;
-    position: relative;
-
-    max-width:100%;
-}
 
 #erin {
     position:absolute;
     bottom:0;
+    max-width: 85%;
 
-    max-width:100%;
+    /* center horizontally */
+    left: 0;
+    right: 0;
+    margin-inline: auto;
 }
 
 .nodeContainer img {
@@ -69,10 +57,16 @@ html, body {
 #timeline {
     background-color: rgba(0, 5, 51, 0.7);
     border-radius: 20px;
+    width: 85%;
+    margin-inline: auto;
+    position: relative;
+}
 
+#timeline-nodes {
+    position: relative;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    width:85%;
+    width: 100%;
 
     text-align: center;
 
@@ -153,8 +147,10 @@ html, body {
     border-radius: 5px;
 
     min-width: 50px;
-    max-width: 100px;
-    width:min-content;
+    max-width: 90%;
+    /* 5 columns would be 20% of the screen width each (20vw). since the
+       timeline is 85% of the screen width, let's say each node is 15vw wide*/
+    width: 15vw;
     height:min-content;
     min-height: 50px; 
 
@@ -162,8 +158,9 @@ html, body {
     margin: auto;
     margin-top: 40px;
     margin-bottom: 40px;
-    padding: 5px;
- 
+    /* add a bit more space around node content */
+    padding-inline: 0.5rem;
+    padding-block: 1rem;
     filter: drop-shadow(-5px -5px 5px black); 
     backdrop-filter: blur(5px);
     position:relative;
@@ -213,7 +210,9 @@ html, body {
     margin-top:5px;
 
     max-width:150px;
-
+    /* center sprites horizontally */
+    width: fit-content;
+    margin-inline: auto;
 }
 
 .povSprite {

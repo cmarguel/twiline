@@ -96,7 +96,7 @@ function createHeading(title) {
     heading.className = "heading";
     let titleText = document.createTextNode(title);
     heading.append(titleText);
-    document.getElementById("timeline").append(heading);
+    document.getElementById("timeline-nodes").append(heading);
 }
 
 function fillRowWithEmptyCells(r) {
@@ -107,7 +107,7 @@ function fillRowWithEmptyCells(r) {
 
         //let textNode = document.createTextNode("cell-" +  r + "-" + c);
         //gridItem.append(textNode);
-        document.getElementById("timeline").append(gridItem);
+        document.getElementById("timeline-nodes").append(gridItem);
     }
 }
 
