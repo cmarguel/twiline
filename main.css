@@ -28,10 +28,30 @@ html, body {
 
     position:absolute;
     top: 110px;
-    left: 150px;
+    left: 10vw;
     z-index: 1001;
 }
 
+#credits {
+    background-color: rgba(128, 128, 200, .3); 
+    color: rgb(181, 213, 255);
+    border-radius: 5px;
+    padding: 1vw;
+
+    width:23vw;
+    position:absolute;
+    top: 110px;
+    right: 8vw;
+    z-index: 1001;
+}
+
+#credits h1 {
+    font-size: 3vw;
+}
+
+#credits ul {
+    font-size: 2vw;
+}
 
 #erin {
     position:absolute;
