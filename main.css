@@ -289,7 +289,6 @@ html, body {
     position: absolute;
     z-index: 1000;
     bottom: -125%;
-    left: 250%;
     margin-left: -60px;
   
     /* Fade in tooltip */
