@@ -56,6 +56,10 @@
   prereqs: ["1.06"]
   rank: 1
   povs: [erin]
+  art: 
+    name: relc
+    pos: 3
+    layer: 1
 -
   title: "1.08"
   url: "https://wanderinginn.com/2017/03/03/rw1-08/"
@@ -68,6 +72,10 @@
   prereqs: ["1.08"]
   rank: 1
   povs: [erin]
+  art: 
+    name: klb
+    pos: 1
+    layer: 2
 -
   title: "1.10"
   url: "https://wanderinginn.com/2017/03/03/rw1-10/"

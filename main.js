@@ -31,6 +31,16 @@ for(let i = 0; i < timeline.length; i++) {
     let place = placeFor(info.rank);
     cell(i, place).append(node);
 
+    // info.art also contains an attribute called "layer". This is not currently in use
+    // but my hope is to eventually put these little bits of art on separate parallax layers.
+    if (info.art) {
+        let art = document.createElement("img");
+        art.className = "ingredient";
+        art.src = "bg/" + info.art.name + ".png"
+        cell(i, info.art.pos).append(art);
+        cell(i, info.art.pos).append(document.createTextNode(info.art.name));
+    }
+
     if(info.prereqs) {
         drawArrows(info, prev);
     }
@@ -74,15 +84,6 @@ for(let i = 0; i < timeline.length; i++) {
     }
     prev = info;
 }
-
-let relc = document.createElement("img");
-relc.className = "ingredient";
-relc.src = "bg/relc.png"
-cell(8, 3).append(relc);
-let klb = document.createElement("img");
-klb.className = "ingredient";
-klb.src = "bg/klb.png"
-cell(10, 1).append(klb);
 
 // LeaderLine doesn't draw arrows quite right at the start, but resizing the window
 // corrects it--this leads me to think it's drawing arrows using an outdated DOM,
