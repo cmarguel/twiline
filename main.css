@@ -44,11 +44,12 @@ html, body {
     margin-inline: auto;
 }
 
-.nodeContainer img {
+.ingredient {
     position: absolute;
 
     z-index: 150;
-    scale:50%;
+
+    max-width:85%;
 }
 
 .leader-line {
@@ -151,7 +152,7 @@ html, body {
     max-width: 90%;
     /* 5 columns would be 20% of the screen width each (20vw). since the
        timeline is 85% of the screen width, let's say each node is 15vw wide*/
-    width: 15vw;
+    width: 15vw; 
     height:min-content;
     min-height: 50px; 
 

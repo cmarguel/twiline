@@ -76,9 +76,11 @@ for(let i = 0; i < timeline.length; i++) {
 }
 
 let relc = document.createElement("img");
+relc.className = "ingredient";
 relc.src = "bg/relc.png"
 cell(8, 3).append(relc);
 let klb = document.createElement("img");
+klb.className = "ingredient";
 klb.src = "bg/klb.png"
 cell(10, 1).append(klb);
 
