@@ -8,11 +8,10 @@ yamlString = YAML.stringify(timeline);
 for(let r = 0; r < timeline.length; r++) {
     timeline[r].id = r;
 
+    fillRowWithEmptyCells(r);
     if(timeline[r].heading) {
         createHeading(timeline[r].title);
-    } else {
-        fillRowWithEmptyCells(r);
-    }
+    } 
 }
 
 let prev = null;

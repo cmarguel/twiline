@@ -193,10 +193,6 @@
   prereqs: ["1.24"]
   rank: 1
   povs: [erin]
-  art:
-    name: rags
-    pos: 1
-    layer: 2
 -
   title: "1.26 R"
   url: "https://wanderinginn.com/2017/03/04/rw1-26-r/"
@@ -448,7 +444,7 @@
 -
   title: "Interlude - The Call"
   url: "https://wanderinginn.com/2017/03/07/interlude-2/"
-  prereqs: null
+  from: "Interlude - The Great Ritual"
   rank: 2
   povs: [earthers]
   type: jump
@@ -556,6 +552,10 @@
   rank: 2
   povs: null
   guests: null
+  art:
+    name: rags
+    pos: 0
+    layer: 2
 -
   title: "Interlude - Mating Rituals (Pt. 1)"
   url: "https://wanderinginn.com/2017/04/17/side-story-mating-rituals/"
@@ -846,7 +846,7 @@
 -
   title: "3.00 E"
   url: "https://wanderinginn.com/2017/08/01/3-00-e/"
-  prereqs: null
+  from: "Interlude - The Great Ritual"
   rank: 3
   povs: [laken]
   guests: null
@@ -889,7 +889,7 @@
 -
   title: "1.00 D"
   url: "https://wanderinginn.com/2017/08/20/1-00-d/"
-  prereqs: null
+  from: "Interlude - The Great Ritual"
   rank: 4
   povs: null
   guests: null
@@ -1231,7 +1231,7 @@
 -
   title: "4.00 K"
   url: "https://wanderinginn.com/2018/01/06/4-00-k/"
-  prereqs: null
+  from: "2.22 K"
   rank: 5
   povs: null
   guests: null
@@ -1353,7 +1353,7 @@
   url: "https://wanderinginn.com/2018/02/27/4-17/"
   prereqs: p
   rank: 1
-  povs: null
+  povs: [ryoka]
   guests: null
 -
   title: "1.02 D"
