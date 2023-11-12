@@ -460,193 +460,198 @@
   prereqs: ["2.00"]
   rank: 1
   povs: [erin, ryoka]
-  guests: [klbkch, relc, zevara, selys, rags, krshia, pisces, pawn, ksvmr]
+  guests: [rags]
 -
   title: "2.02"
   url: "https://wanderinginn.com/2017/03/18/2-03/"
   prereqs: ["2.01"]
   rank: 1
   povs: [erin, ryoka]
-  guests: [klbkch, toren, zevara, selys, rags, krshia, pisces, ksvmr, gazi]
+  guests: [rags]
 -
   title: "2.03"
   url: "https://wanderinginn.com/2017/03/22/2-04/"
   prereqs: ["2.02"]
   rank: 1
   povs: [erin, ryoka]
-  guests: [toren, rags, pisces, ksvmr, ceria, olesm]
+  guests: [toren, rags]
 -
   title: "2.04"
   url: "https://wanderinginn.com/2017/03/25/2-05/"
   prereqs: ["2.03"]
   rank: 1
   povs: [erin, ryoka]
-  guests: [rags, pisces, ksvmr, ceria, olesm, zevara, gazi]
+  guests: [rags]
 -
   title: "2.05"
   url: "https://wanderinginn.com/2017/03/28/2-06/"
   prereqs: p
   rank: 1
-  povs: null
+  povs: [erin, ryoka]
   guests: null
 -
   title: "2.06"
   url: "https://wanderinginn.com/2017/04/02/2-06-2/"
   prereqs: p
   rank: 1
-  povs: null
+  povs: [erin, ryoka]
   guests: null
 -
   title: "2.07"
   url: "https://wanderinginn.com/2017/04/04/2-08/"
   prereqs: p
   rank: 1
-  povs: null
+  povs: [erin, ryoka]
   guests: null
 -
   title: "2.08"
   url: "https://wanderinginn.com/2017/04/09/2-09/"
   prereqs: p
-  rank: 1
-  povs: null
+  rank: 2
+  povs: [ryoka]
   guests: null
 -
   title: "2.09"
   url: "https://wanderinginn.com/2017/04/12/2-10/"
-  prereqs: p
+  prereqs: ["2.07"]
   rank: 1
-  povs: null
+  povs: [erin]
   guests: null
 -
   title: "2.10 T"
   url: "https://wanderinginn.com/2017/04/12/2-00-t/"
-  prereqs: p
-  rank: 1
-  povs: null
+  prereqs: ["2.07"]
+  rank: 4
+  povs: [toren]
   guests: null
+  type: jump
 -
   title: "2.11"
   url: "https://wanderinginn.com/2017/04/13/2-11/"
-  prereqs: p
+  prereqs: ["2.09"]
   rank: 1
-  povs: null
+  povs: [erin]
   guests: null
 -
   title: "2.12"
   url: "https://wanderinginn.com/2017/04/14/2-12/"
-  prereqs: p
-  rank: 1
-  povs: null
+  prereqs: ["2.08"]
+  rank: 2
+  povs: [ryoka]
   guests: null
 -
   title: "2.13"
   url: "https://wanderinginn.com/2017/04/15/2-13/"
-  prereqs: p
+  prereqs: ["2.11"]
   rank: 1
-  povs: null
+  povs: [erin]
   guests: null
 -
   title: "2.14 G"
   url: "https://wanderinginn.com/2017/04/16/2-00-g/"
-  prereqs: ["2.06"]
-  rank: 2
-  povs: null
+  from: "2.06"
+  rank: 3
+  povs: [rags]
   guests: null
   art:
     name: rags
-    pos: 0
+    pos: 1
     layer: 2
 -
   title: "Interlude - Mating Rituals (Pt. 1)"
   url: "https://wanderinginn.com/2017/04/17/side-story-mating-rituals/"
-  prereqs: ["2.13"]
-  rank: 1
-  povs: null
+  prereqs: null
+  rank: 4
+  povs: [erin]
   guests: null
 -
   title: "2.15"
   url: "https://wanderinginn.com/2017/04/18/2-14/"
-  prereqs: p
-  rank: 1
-  povs: null
+  prereqs: ["2.12"]
+  rank: 2
+  povs: [ryoka]
   guests: null
 -
   title: "2.16"
   url: "https://wanderinginn.com/2017/04/22/2-15/"
-  prereqs: p
+  prereqs: ["2.13", "2.15"]
   rank: 1
-  povs: null
+  povs: [erin, ryoka]
   guests: null
+  catchup: >
+    Ryoka returns to the inn, having negotiated Teriarch into paying a much higher fee of 800 gold coins for his unreasonable delivery. Along the 
+    way, she meets the Courier, Valceif Godfrey, who is seeking the best chess player in Liscor. Oh, and Erin invented hamburgers. 
 -
   title: "2.17"
   url: "https://wanderinginn.com/2017/04/22/2-16/"
   prereqs: p
   rank: 1
-  povs: null
+  povs: [erin, ryoka]
   guests: null
 -
   title: "2.18"
   url: "https://wanderinginn.com/2017/04/25/2-17/"
   prereqs: p
   rank: 1
-  povs: null
+  povs: [erin, ryoka]
   guests: null
 -
   title: "2.19 G"
   url: "https://wanderinginn.com/2017/04/27/2-01-g/"
-  prereqs: ["2.14 G"]
-  rank: 2
-  povs: null
-  guests: null
+  prereqs: ["2.14 G", "2.18"]
+  rank: 3
+  povs: [rags]
+  guests: [erin]
 -
   title: "2.20"
   url: "https://wanderinginn.com/2017/04/29/2-18/"
-  prereqs: ["2.18"]
+  prereqs: ["2.18", "2.19 G"]
   rank: 1
-  povs: null
-  guests: null
+  povs: [erin, ryoka]
+  guests: [toren]
 -
   title: "2.21"
   url: "https://wanderinginn.com/2017/05/03/2-19/"
   prereqs: p
   rank: 1
-  povs: null
+  povs: [erin]
   guests: null
 -
   title: "2.22 K"
   url: "https://wanderinginn.com/2017/05/05/2-00-k/"
+  prereqs: ["2.05"]
   from: "Interlude - King Edition"
   type: jump
   rank: 5
-  povs: null
+  povs: [gazi]
   guests: null
 -
   title: "2.23"
   url: "https://wanderinginn.com/2017/05/07/2-20/"
   prereqs: ["2.21"]
   rank: 1
-  povs: null
+  povs: [erin]
   guests: null
 -
   title: "2.24 T"
   url: "https://wanderinginn.com/2017/05/10/2-01-t/"
   prereqs: p
-  rank: 1
-  povs: null
+  rank: 3
+  povs: [toren]
   guests: null
 -
   title: "2.25"
   url: "https://wanderinginn.com/2017/05/14/2-21/"
-  prereqs: p
+  prereqs: ["2.23"]
   rank: 1
-  povs: null
+  povs: [erin]
   guests: null
 -
   title: "2.26"
   url: "https://wanderinginn.com/2017/05/17/2-22/"
-  prereqs: p
+  prereqs: ["2.24 T", "2.25"]
   rank: 1
-  povs: null
+  povs: [erin]
   guests: null
 -
   title: "1.00 C"
@@ -666,37 +671,37 @@
 -
   title: "2.27 G"
   url: "https://wanderinginn.com/2017/05/21/2-02-g/"
-  prereqs: ["2.19 G"]
-  rank: 2
+  from: ["2.19 G"]
+  rank: 3
   povs: null
   guests: null
 -
   title: "2.28"
   url: "https://wanderinginn.com/2017/05/24/2-23/"
-  prereqs: ["2.26"]
-  rank: 1
-  povs: null
+  prereqs: ["2.20"]
+  rank: 2
+  povs: [ryoka]
   guests: null
 -
   title: "2.29"
   url: "https://wanderinginn.com/2017/05/26/2-24/"
   prereqs: p
-  rank: 1
-  povs: null
+  rank: 2
+  povs: [ryoka]
   guests: null
 -
   title: "2.30"
   url: "https://wanderinginn.com/2017/05/28/2-25/"
   prereqs: p
-  rank: 1
-  povs: null
+  rank: 2
+  povs: [ryoka]
   guests: null
 -
   title: "2.31"
   url: "https://wanderinginn.com/2017/05/31/2-26/"
-  prereqs: p
+  prereqs: ["2.26"]
   rank: 1
-  povs: null
+  povs: [erin]
   guests: null
 -
   title: "2.32 H"
@@ -731,7 +736,7 @@
   url: "https://wanderinginn.com/2017/06/14/2-03-g/"
   prereqs: ["2.27 G"]
   type: jump
-  rank: 2
+  rank: 3
   povs: null
   guests: null
 -
