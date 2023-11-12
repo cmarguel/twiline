@@ -400,24 +400,24 @@
   title: "1.57 H"
   url: "https://wanderinginn.com/2017/03/04/rw1-57-h/"
   prereqs: ["1.56"]
-  rank: 1
+  rank: 3
   povs: [horns]
 -
   title: "1.58 H"
   url: "https://wanderinginn.com/2017/03/04/rw1-58-h/"
   prereqs: p
-  rank: 1
+  rank: 3
   povs: [horns]
 -
   title: "1.59 H"
   url: "https://wanderinginn.com/2017/03/04/rw1-59-h/"
   prereqs: p
-  rank: 1
+  rank: 3
   povs: [horns]
 -
   title: "1.60"
   url: "https://wanderinginn.com/2017/03/04/rw1-60/"
-  prereqs: p
+  prereqs: ["1.56", "1.59 H"]
   rank: 1
   povs: [erin]
 -
@@ -552,14 +552,14 @@
 -
   title: "2.14 G"
   url: "https://wanderinginn.com/2017/04/16/2-00-g/"
-  prereqs: p
-  rank: 1
+  prereqs: ["2.06"]
+  rank: 2
   povs: null
   guests: null
 -
   title: "Interlude - Mating Rituals (Pt. 1)"
   url: "https://wanderinginn.com/2017/04/17/side-story-mating-rituals/"
-  prereqs: p
+  prereqs: ["2.13"]
   rank: 1
   povs: null
   guests: null
@@ -594,14 +594,14 @@
 -
   title: "2.19 G"
   url: "https://wanderinginn.com/2017/04/27/2-01-g/"
-  prereqs: p
-  rank: 1
+  prereqs: ["2.14 G"]
+  rank: 2
   povs: null
   guests: null
 -
   title: "2.20"
   url: "https://wanderinginn.com/2017/04/29/2-18/"
-  prereqs: p
+  prereqs: ["2.18"]
   rank: 1
   povs: null
   guests: null
@@ -615,14 +615,15 @@
 -
   title: "2.22 K"
   url: "https://wanderinginn.com/2017/05/05/2-00-k/"
-  prereqs: p
-  rank: 1
+  from: "Interlude - King Edition"
+  type: jump
+  rank: 5
   povs: null
   guests: null
 -
   title: "2.23"
   url: "https://wanderinginn.com/2017/05/07/2-20/"
-  prereqs: p
+  prereqs: ["2.21"]
   rank: 1
   povs: null
   guests: null
@@ -650,28 +651,29 @@
 -
   title: "1.00 C"
   url: "https://wanderinginn.com/2017/05/18/1-00-c/"
-  prereqs: p
-  rank: 1
-  povs: null
+  from: "Interlude - The Great Ritual"
+  rank: 4
+  povs: [tom]
   guests: null
 -
   title: "1.01 C"
   url: "https://wanderinginn.com/2017/05/19/1-01-c/"
   prereqs: p
-  rank: 1
-  povs: null
+  rank: 4
+  povs: [tom]
   guests: null
+  type: jump
 -
   title: "2.27 G"
   url: "https://wanderinginn.com/2017/05/21/2-02-g/"
-  prereqs: p
-  rank: 1
+  prereqs: ["2.19 G"]
+  rank: 2
   povs: null
   guests: null
 -
   title: "2.28"
   url: "https://wanderinginn.com/2017/05/24/2-23/"
-  prereqs: p
+  prereqs: ["2.26"]
   rank: 1
   povs: null
   guests: null
@@ -727,14 +729,15 @@
 -
   title: "2.36 G"
   url: "https://wanderinginn.com/2017/06/14/2-03-g/"
-  prereqs: p
-  rank: 1
+  prereqs: ["2.27 G"]
+  type: jump
+  rank: 2
   povs: null
   guests: null
 -
   title: "2.37"
   url: "https://wanderinginn.com/2017/06/18/2-30/"
-  prereqs: p
+  prereqs: ["2.35"]
   rank: 1
   povs: null
   guests: null
@@ -755,21 +758,22 @@
 -
   title: "Interlude - The Antinium Wars (Pt.1)"
   url: "https://wanderinginn.com/2017/06/25/s02-the-antinium-wars-pt-1/"
-  prereqs: p
-  rank: 1
+  prereqs: null
+  rank: 5
   povs: null
   guests: null
 -
   title: "Interlude - The Antinium Wars (Pt.2)"
   url: "https://wanderinginn.com/2017/06/26/s02-the-antinium-wars-pt-2/"
   prereqs: p
-  rank: 1
+  rank: 5
   povs: null
   guests: null
+  type: jump
 -
   title: "2.39"
   url: "https://wanderinginn.com/2017/06/27/2-32/"
-  prereqs: p
+  prereqs: ["Interlude - Quiet Discussions"]
   rank: 1
   povs: null
   guests: null
@@ -842,30 +846,31 @@
 -
   title: "3.00 E"
   url: "https://wanderinginn.com/2017/08/01/3-00-e/"
-  prereqs: p
-  rank: 1
-  povs: null
+  prereqs: null
+  rank: 3
+  povs: [laken]
   guests: null
 -
   title: "3.01 E"
   url: "https://wanderinginn.com/2017/08/05/3-01-e/"
   prereqs: p
-  rank: 1
-  povs: null
+  rank: 3
+  povs: [laken]
   guests: null
+  type: jump
 -
   title: "3.02 H"
   url: "https://wanderinginn.com/2017/08/08/3-02-h/"
-  prereqs: p
-  rank: 1
-  povs: null
+  prereqs: null
+  rank: 2
+  povs: [horns]
   guests: null
 -
   title: "3.03"
   url: "https://wanderinginn.com/2017/08/12/3-03/"
-  prereqs: p
+  prereqs: ["2.48"]
   rank: 1
-  povs: null
+  povs: [erin]
   guests: null
 -
   title: "3.04"
@@ -877,49 +882,51 @@
 -
   title: "3.05 L"
   url: "https://wanderinginn.com/2017/08/19/3-05-l/"
-  prereqs: p
-  rank: 1
+  prereqs: null
+  rank: 3
   povs: null
   guests: null
 -
   title: "1.00 D"
   url: "https://wanderinginn.com/2017/08/20/1-00-d/"
-  prereqs: p
-  rank: 1
+  prereqs: null
+  rank: 4
   povs: null
   guests: null
 -
   title: "1.01 D"
   url: "https://wanderinginn.com/2017/08/21/1-01-d/"
   prereqs: p
-  rank: 1
+  type: jump
+  rank: 4
   povs: null
   guests: null
 -
   title: "3.06 L"
   url: "https://wanderinginn.com/2017/08/22/3-06-l/"
-  prereqs: p
-  rank: 1
+  prereqs: ["3.05 L"]
+  type: jump
+  rank: 3
   povs: null
   guests: null
 -
   title: "3.07 H"
   url: "https://wanderinginn.com/2017/08/26/3-07-h/"
-  prereqs: p
-  rank: 1
+  prereqs: ["3.02 H"]
+  rank: 2
   povs: null
   guests: null
 -
   title: "3.08 H"
   url: "https://wanderinginn.com/2017/08/29/3-08-h/"
   prereqs: p
-  rank: 1
+  rank: 2
   povs: null
   guests: null
 -
   title: "3.09"
   url: "https://wanderinginn.com/2017/09/02/3-09/"
-  prereqs: p
+  prereqs: ["3.04"]
   rank: 1
   povs: null
   guests: null
@@ -933,21 +940,22 @@
 -
   title: "3.11 E"
   url: "https://wanderinginn.com/2017/09/09/3-11-e/"
-  prereqs: p
-  rank: 1
+  from: ["3.11 E"]
+  rank: 3
   povs: null
   guests: null
 -
   title: "3.12 E"
   url: "https://wanderinginn.com/2017/09/12/3-12-e/"
   prereqs: p
-  rank: 1
+  type: jump
+  rank: 3
   povs: null
   guests: null
 -
   title: "3.13"
   url: "https://wanderinginn.com/2017/09/16/3-13/"
-  prereqs: p
+  prereqs: ["3.10"]
   rank: 1
   povs: null
   guests: null
@@ -975,56 +983,58 @@
 -
   title: "3.17 T"
   url: "https://wanderinginn.com/2017/09/27/3-17-t/"
-  prereqs: p
-  rank: 1
+  prereqs: null
+  rank: 2
   povs: null
   guests: null
 -
   title: "3.18 T"
   url: "https://wanderinginn.com/2017/09/28/3-18-t/"
   prereqs: p
-  rank: 1
+  rank: 2
   povs: null
   guests: null
 -
   title: "3.19 T"
   url: "https://wanderinginn.com/2017/09/30/3-19-t/"
   prereqs: p
-  rank: 1
+  rank: 2
   povs: null
   guests: null
 -
   title: "3.20 T"
   url: "https://wanderinginn.com/2017/10/03/3-20-t/"
   prereqs: p
-  rank: 1
+  rank: 2
+  type: jump
   povs: null
   guests: null
 -
   title: "3.21 L"
   url: "https://wanderinginn.com/2017/10/07/3-21-l/"
-  prereqs: p
-  rank: 1
+  from: "3.06 L"
+  rank: 3
   povs: null
   guests: null
 -
   title: "3.22 L"
   url: "https://wanderinginn.com/2017/10/10/3-22-l/"
   prereqs: p
-  rank: 1
+  rank: 3
   povs: null
   guests: null
 -
   title: "3.23 L"
   url: "https://wanderinginn.com/2017/10/14/3-23-l/"
   prereqs: p
-  rank: 1
+  type: jump
+  rank: 3
   povs: null
   guests: null
 -
   title: "3.24"
   url: "https://wanderinginn.com/2017/10/17/3-24/"
-  prereqs: p
+  prereqs: ["3.16"]
   rank: 1
   povs: null
   guests: null
@@ -1041,98 +1051,100 @@
 -
   title: "3.26 G"
   url: "https://wanderinginn.com/2017/10/24/3-26-g/"
-  prereqs: p
-  rank: 1
+  prereqs: null
+  rank: 2
   povs: null
   guests: null
 -
   title: "3.27 M"
   url: "https://wanderinginn.com/2017/10/26/3-27-m/"
-  prereqs: p
-  rank: 1
+  prereqs: ["3.23 L"]
+  type: jump
+  rank: 3
   povs: null
   guests: null
 -
   title: "3.28 G"
   url: "https://wanderinginn.com/2017/10/28/3-28-g/"
-  prereqs: p
-  rank: 1
+  prereqs: ["3.26 G"]
+  rank: 2
   povs: null
   guests: null
 -
   title: "3.29 G"
   url: "https://wanderinginn.com/2017/10/31/3-29-g/"
   prereqs: p
-  rank: 1
+  rank: 2
   povs: null
   guests: null
 -
   title: "3.30"
   url: "https://wanderinginn.com/2017/11/04/3-30/"
-  prereqs: p
+  prereqs: ["3.25"]
   rank: 1
   povs: null
   guests: null
 -
   title: "3.31 G"
   url: "https://wanderinginn.com/2017/11/07/3-31-g/"
-  prereqs: p
-  rank: 1
+  prereqs: ["3.29 G"]
+  type: jump
+  rank: 2
   povs: null
   guests: null
 -
   title: "Interlude - Wistram Days (Pt. 1)"
   url: "https://wanderinginn.com/2017/11/09/s03-wistram-days-pt-1/"
-  prereqs: p
-  rank: 1
-  povs: null
+  prereqs: null
+  rank: 5
+  povs: [ceria, pisces]
   guests: null
 -
   title: "Interlude - Wistram Days (Pt. 2)"
   url: "https://wanderinginn.com/2017/11/10/s03-wistram-days-pt-2/"
   prereqs: p
-  rank: 1
-  povs: null
+  rank: 5
+  povs: [ceria, pisces]
   guests: null
 -
   title: "Interlude - Wistram Days (Pt. 3)"
   url: "https://wanderinginn.com/2017/11/11/wistram-days-pt-3/"
   prereqs: p
-  rank: 1
-  povs: null
+  rank: 5
+  povs: [ceria, pisces]
   guests: null
 -
   title: "Interlude - Wistram Days (Pt. 4)"
   url: "https://wanderinginn.com/2017/11/12/wistram-days-pt-4/"
   prereqs: p
-  rank: 1
-  povs: null
+  rank: 5
+  povs: [ceria, pisces]
   guests: null
 -
   title: "Interlude - Wistram Days (Pt. 5)"
   url: "https://wanderinginn.com/2017/11/14/wistram-days-pt-5/"
   prereqs: p
-  rank: 1
-  povs: null
+  rank: 5
+  povs: [ceria, pisces]
   guests: null
 -
   title: "Interlude - Wistram Days (Pt. 6)"
   url: "https://wanderinginn.com/2017/11/18/wistram-days-pt-6/"
   prereqs: p
-  rank: 1
-  povs: null
+  rank: 5
+  povs: [ceria, pisces]
   guests: null
 -
   title: "Interlude - Wistram Days (Pt. 7)"
   url: "https://wanderinginn.com/2017/11/21/wistram-days-pt-7/"
   prereqs: p
-  rank: 1
-  povs: null
+  rank: 5
+  povs: [ceria, pisces]
   guests: null
 -
   title: "3.32"
   url: "https://wanderinginn.com/2017/11/25/3-32/"
-  prereqs: p
+  prereqs: ["3.30"]
   rank: 1
   povs: null
   guests: null
@@ -1219,56 +1231,57 @@
 -
   title: "4.00 K"
   url: "https://wanderinginn.com/2018/01/06/4-00-k/"
-  prereqs: p
-  rank: 1
+  prereqs: null
+  rank: 5
   povs: null
   guests: null
 -
   title: "4.01 K"
   url: "https://wanderinginn.com/2018/01/09/4-01-k/"
   prereqs: p
-  rank: 1
+  rank: 5
   povs: null
   guests: null
 -
   title: "4.02 K"
   url: "https://wanderinginn.com/2018/01/13/4-02-k/"
   prereqs: p
-  rank: 1
+  rank: 5
   povs: null
   guests: null
 -
   title: "4.03 K"
   url: "https://wanderinginn.com/2018/01/16/4-03-k/"
   prereqs: p
-  rank: 1
+  rank: 5
   povs: null
   guests: null
 -
   title: "4.04 K"
   url: "https://wanderinginn.com/2018/01/20/4-04-k/"
   prereqs: p
-  rank: 1
+  rank: 5
   povs: null
   guests: null
 -
   title: "4.05 K"
   url: "https://wanderinginn.com/2018/01/23/4-05-k/"
   prereqs: p
-  rank: 1
+  rank: 5
   povs: null
   guests: null
 -
   title: "4.06 KM"
   url: "https://wanderinginn.com/2018/01/27/4-06-km/"
   prereqs: p
-  rank: 1
+  type: jump
+  rank: 5
   povs: null
   guests: null
 -
   title: "4.07"
   url: "https://wanderinginn.com/2018/01/30/4-07/"
-  prereqs: p
+  prereqs: ["Interlude - Winter Solstice"]
   rank: 1
   povs: null
   guests: null
@@ -1345,42 +1358,43 @@
 -
   title: "1.02 D"
   url: "https://wanderinginn.com/2018/03/01/1-02-d/"
-  prereqs: p
-  rank: 1
+  from: "1.01 D"
+  rank: 4
   povs: null
   guests: null
 -
   title: "1.03 D"
   url: "https://wanderinginn.com/2018/03/03/1-03-d/"
   prereqs: p
-  rank: 1
+  rank: 4
   povs: null
   guests: null
 -
   title: "1.04 D"
   url: "https://wanderinginn.com/2018/03/06/1-04-d/"
   prereqs: p
-  rank: 1
+  rank: 4
   povs: null
   guests: null
 -
   title: "1.05 D"
   url: "https://wanderinginn.com/2018/03/06/1-05-d/"
   prereqs: p
-  rank: 1
+  rank: 4
   povs: null
   guests: null
 -
   title: "1.06 D"
   url: "https://wanderinginn.com/2018/03/10/1-06-d/"
   prereqs: p
-  rank: 1
+  type: jump
+  rank: 4
   povs: null
   guests: null
 -
   title: "4.18"
   url: "https://wanderinginn.com/2018/03/13/4-18/"
-  prereqs: p
+  prereqs: ["4.17"]
   rank: 1
   povs: null
   guests: null
