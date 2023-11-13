@@ -9,11 +9,12 @@
   rank: 1
   povs: [erin]
   catchup: >
-          The start of the saga. If you see a node like this, it means important plot 
-          threads have converged here, and you can hover over them (or tap, if you're on mobile) 
-          to get a quick overview of what points from each thread you might need to know--in case 
-          you forgot, or skipped a few chapters. These nodes will have spoilers for preceding
-          chapters!
+          The start of the saga. If you see a node with a white double border like this, it means 
+          more than one plot threads have converged here, and you can hover over them (or tap, if you're on mobile) 
+          to get a quick "previously on" to remind you what you need to know from each thread. If 
+          the node has a red double border, it means it probably should have a "previously on", but nobody's written 
+          one. Send one in if you can come up with one!
+  annotation: "Hover over me! Or tap on mobile!"
 -
   title: "1.01"
   url: "https://wanderinginn.com/2017/03/03/rw1-01/"

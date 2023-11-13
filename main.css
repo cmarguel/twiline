@@ -32,6 +32,10 @@ html, body {
     z-index: 1001;
 }
 
+.annotation {
+    color: white;
+}
+
 #credits {
     background-color: rgba(128, 128, 200, .3); 
     color: rgb(181, 213, 255);
@@ -196,6 +200,12 @@ html, body {
     border-color: white !important;
 }
 
+.emptyDataNode {
+    border-style: double !important;
+    border-width: 5px !important;
+    border-color: rgb(175, 56, 56) !important;
+}
+
 .node a, .portal a {
     clear:both;
 
@@ -264,14 +274,14 @@ html, body {
 }
 
 /***** Tooltip CSS copied and modified from W3Schools *****/
-  .dataNode {
+  .dataNode, .emptyDataNode {
     /* Have no idea why this is required for the tooltip to work. -- Miguel */
     position: relative;
     z-index:1000;
   }
 
   /* Tooltip text */
-  .dataNode .dataPanel {
+  .dataNode .dataPanel, .emptyDataNode .dataPanel {
     position:relative;
     visibility: hidden;
     width: 250px !important; 
@@ -298,7 +308,7 @@ html, body {
   }
   
   /* Show the tooltip text when you mouse over the tooltip container */
-  .dataNode:hover .dataPanel {
+  .dataNode:hover .dataPanel, .emptyDataNode:hover .dataPanel {
     visibility: visible;
     opacity: 1;
     z-index: 1000;

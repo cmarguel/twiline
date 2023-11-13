@@ -140,7 +140,15 @@ function drawArrows(info, prev) {
     // there's multiple parents.
     if (info.prereqs == "p") { 
         info.prereqs = [prev.title];
-    }
+        
+        // if (info.rank != chapters[prev.title].rank) {
+        //     // Don't draw an inbound arrow if it's the start of a spun-off thread 
+        //     return;
+        // }
+    } // else if (info.prereqs.length == 1 && info.rank != chapters[info.prereqs[0]].rank) {
+        // Don't draw an inbound arrow if it's the start of a spun-off thread 
+        //return;
+    // }
     for (let j = 0; j < info.prereqs.length; j++) {
         let start = chapters[info.prereqs[j]].id;
         let end = info.id;
@@ -150,7 +158,7 @@ function drawArrows(info, prev) {
 
         let socketStart = "bottom";
         let socketEnd  = "top";
-        
+
         if (sCol < eCol && eCol <= 2) {
             socketEnd = "left";
         } else if (sCol < eCol && sCol >= 2) {
@@ -186,6 +194,14 @@ function createNode(info) {
         var catchupText = document.createTextNode(info.catchup);
         dataPanel.append(catchupText);
         node.append(dataPanel);
+    } else if (info.prereqs && info.prereqs != "p" && info.prereqs.length > 1) {
+        node.className += " emptyDataNode";
+
+        var dataPanel = document.createElement("div");
+        dataPanel.className = "dataPanel";
+        var catchupText = document.createTextNode("Nobody's written a \"Previously On\" for this. Send one in, but keep it short! Look at the other chapters for examples!");
+        dataPanel.append(catchupText);
+        node.append(dataPanel);
     }
 
     var linkContainer = document.createElement("div");
@@ -202,6 +218,14 @@ function createNode(info) {
     spriteContainer.className = "spriteContainer";
     addSprites(spriteContainer, info);
     node.append(spriteContainer);
+
+    if(info.annotation) {
+        var annotationContainer = document.createElement("div");
+        annotationContainer.className = "annotation";
+        var note = document.createTextNode(info.annotation);
+        annotationContainer.append(note);
+        node.append(annotationContainer);
+    }
 
     return node;
 }
