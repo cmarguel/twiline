@@ -8,12 +8,12 @@
   prereqs: null
   rank: 1
   povs: [erin]
-  catchup: >
+  previouslyOn: >
           The start of the saga. If you see a node with a white double border like this, it means 
-          more than one plot threads have converged here, and you can hover over them (or tap, if you're on mobile) 
-          to get a quick "previously on" to remind you what you need to know from each thread. If 
-          the node has a red double border, it means it probably should have a "previously on", but nobody's written 
-          one. Send one in if you can come up with one!
+          more than one plot threads have converged here, and this info box will give you 
+          a quick "previously on" to remind you what you need to know from each thread. If 
+          the node has a red double border, it means it <b>probably</b> should have a "previously on", but nobody's written 
+          one yet. Send one in if you can come up with one!
   annotation: "Hover over me! Or tap on mobile!"
 -
   title: "1.01"
@@ -144,7 +144,7 @@
   rank: 2
   povs: [ryoka]
   from: Interlude - The Great Ritual
-  catchup: "This chapter focuses on a character introduced in Interlude - The Great Ritual."
+  previouslyOn: "This chapter focuses on a character introduced in Interlude - The Great Ritual."
 -
   title: "1.20 R"
   url: "https://wanderinginn.com/2017/03/03/rw1-20-r/"
@@ -185,7 +185,7 @@
   prereqs: null
   rank: 5
   povs: [flos]
-  catchup: "This chapter focuses on multiple characters introduced in Interlude - The Great Ritual."
+  previouslyOn: "This chapter focuses on multiple characters introduced in Interlude - The Great Ritual."
   type: jump
   from: Interlude - The Great Ritual
 -
@@ -345,7 +345,7 @@
   rank: 1
   povs: [erin]
   guests: [horns]
-  catchup: "Ryoka very toxically cut ties with a team of adventurers she befriended--the same adventurers who now find themselves at The Wandering Inn."
+  previouslyOn: "Ryoka very toxically cut ties with a team of adventurers she befriended--the same adventurers who now find themselves at The Wandering Inn."
 -
   title: "1.50"
   url: "https://wanderinginn.com/2017/03/04/rw1-50/"
@@ -435,7 +435,7 @@
   prereqs: ["1.62", "1.55 R"]
   rank: 1
   povs: [erin, ryoka]
-  catchup: >
+  previouslyOn: >
     Following a brief adventure south of the city, Ryoka returns to Liscor, where she finds
     it in shambles after an attack by a giant monster from the dungeon--a monster defeated 
     with key contributions from Erin Solstice and Rags' band of goblins. 
@@ -579,7 +579,7 @@
   rank: 1
   povs: [erin, ryoka]
   guests: null
-  catchup: >
+  previouslyOn: >
     Ryoka returns to the inn, having negotiated Teriarch into paying a much higher fee of 800 gold coins for his unreasonable delivery. Along the 
     way, she meets the Courier, Valceif Godfrey, who is seeking the best chess player in Liscor. Oh, and Erin invented hamburgers. 
 -

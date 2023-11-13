@@ -186,12 +186,12 @@ function createNode(info) {
     var node = document.createElement("div");
     node.id = "c" + info.id;
     node.className = "node";
-    if (info.catchup) {
+    if (info.previouslyOn) {
         node.className += " dataNode";
 
         var dataPanel = document.createElement("div");
         dataPanel.className = "dataPanel";
-        var catchupText = document.createTextNode(info.catchup);
+        var catchupText = document.createTextNode(info.previouslyOn);
         dataPanel.append(catchupText);
         node.append(dataPanel);
     } else if (info.prereqs && info.prereqs != "p" && info.prereqs.length > 1) {
