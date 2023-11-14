@@ -709,28 +709,28 @@
   url: "https://wanderinginn.com/2017/06/04/2-00-h/"
   prereqs: p
   rank: 1
-  povs: null
-  guests: null
+  povs: [horns]
+  guests: [erin]
 -
   title: "2.33"
   url: "https://wanderinginn.com/2017/06/07/2-27/"
   prereqs: p
   rank: 1
-  povs: null
-  guests: null
+  povs: [erin]
+  guests: [horns]
 -
   title: "2.34"
   url: "https://wanderinginn.com/2017/06/09/2-28/"
-  prereqs: p
-  rank: 1
-  povs: null
+  prereqs: ["2.30"]
+  rank: 2
+  povs: [ryoka]
   guests: null
 -
   title: "2.35"
   url: "https://wanderinginn.com/2017/06/11/2-29/"
   prereqs: p
-  rank: 1
-  povs: null
+  rank: 2
+  povs: [ryoka]
   guests: null
 -
   title: "2.36 G"
@@ -738,29 +738,35 @@
   prereqs: ["2.27 G"]
   type: jump
   rank: 3
-  povs: null
+  povs: [rags]
   guests: null
 -
   title: "2.37"
   url: "https://wanderinginn.com/2017/06/18/2-30/"
-  prereqs: ["2.35"]
+  prereqs: ["2.33"]
   rank: 1
-  povs: null
+  povs: [erin]
   guests: null
 -
   title: "2.38"
   url: "https://wanderinginn.com/2017/06/21/2-31/"
   prereqs: p
   rank: 1
-  povs: null
+  povs: [erin]
   guests: null
 -
   title: "Interlude - Quiet Discussions"
   url: "https://wanderinginn.com/2017/06/24/interlude-3/"
+  from: "Interlude - The Call"
   prereqs: p
-  rank: 1
+  rank: 3
   povs: null
   guests: null
+  type: jump
+  previouslyOn: >
+    Magnola has just had an exhausting conversation with the stubborn-as-rocks Erin Solstice, who also bested her at chess. The only one able to  
+    stand a chance against Erin thus far has been an unknown opponent who sent her a magical chessboard that they use to challenge her remotely.
+    Meanwhile, many young folk from earth have been able to establish communications with each other by using Wistram's resources to network iPhones magically. 
 -
   title: "Interlude - The Antinium Wars (Pt.1)"
   url: "https://wanderinginn.com/2017/06/25/s02-the-antinium-wars-pt-1/"
@@ -779,73 +785,83 @@
 -
   title: "2.39"
   url: "https://wanderinginn.com/2017/06/27/2-32/"
-  prereqs: ["Interlude - Quiet Discussions"]
+  prereqs: ["2.35", "2.38"]
   rank: 1
-  povs: null
+  povs: [erin, ryoka]
   guests: null
+  previouslyOn: >
+    On the way back from her delivery to the Necromancer, Ryoka encountered a tribe of gnolls being threatened by goblins. She attempted to save 
+    them, but only managed to save a child, losing two fingers in the process. Meanwhile, Erin heads back towards her inn following a meeting with 
+    Magnolia, who--she just learned--has been tracking and housing other people from earth.  
 -
   title: "2.40"
   url: "https://wanderinginn.com/2017/07/01/2-33/"
   prereqs: p
   rank: 1
-  povs: null
+  povs: [erin, ryoka]
   guests: null
 -
   title: "2.41"
   url: "https://wanderinginn.com/2017/07/04/2-34/"
   prereqs: p
   rank: 1
-  povs: null
+  povs: [ryoka, erin]
   guests: null
 -
   title: "2.42"
   url: "https://wanderinginn.com/2017/07/08/2-35/"
   prereqs: p
   rank: 1
-  povs: null
-  guests: null
+  povs: [erin]
+  guests: [ryoka]
 -
   title: "2.43"
   url: "https://wanderinginn.com/2017/07/11/2-36/"
   prereqs: p
   rank: 1
-  povs: null
-  guests: null
+  povs: [erin]
+  guests: [ryoka, toren]
 -
   title: "2.44"
   url: "https://wanderinginn.com/2017/07/15/2-37/"
   prereqs: p
   rank: 1
-  povs: null
+  povs: [erin]
   guests: null
 -
   title: "2.45"
   url: "https://wanderinginn.com/2017/07/18/2-38/"
   prereqs: p
-  rank: 1
-  povs: null
+  rank: 2
+  povs: [ryoka]
   guests: null
 -
   title: "2.46"
   url: "https://wanderinginn.com/2017/07/22/2-39/"
   prereqs: p
-  rank: 1
-  povs: null
+  rank: 2
+  povs: [ryoka]
   guests: null
 -
   title: "2.47"
   url: "https://wanderinginn.com/2017/07/25/2-40/"
-  prereqs: p
+  prereqs: ["2.44", "2.46"]
   rank: 1
-  povs: null
+  povs: [erin, ryoka]
   guests: null
+  previouslyOn: >
+    Ryoka petitions Teriarch to aid her in finding Erin, and he does so out of kindness after he wins against Ryoka in a game of riddles.
+    She is teleported right into Octavia's shop as Octavia is busy scolding Erin.
 -
   title: "2.48"
   url: "https://wanderinginn.com/2017/07/29/2-41/"
   prereqs: p
   rank: 1
   povs: null
-  guests: null
+  guests: [erin, ryoka, rags]
+  previouslyOn: >
+    Erin and Ryoka have reunited in Celum. The leader of the Redfang Tribe, Garen Redfang, has voluntarily surrendered himself and his tribe to Rags,
+    under the belief that she would be an ideal figure to unite multiple tribes against a Goblin Lord rising in the north.
 -
   title: The Wandering Inn - Volume 3 - Flowers of Esthelm
   heading: true
@@ -867,17 +883,20 @@
 -
   title: "3.02 H"
   url: "https://wanderinginn.com/2017/08/08/3-02-h/"
-  prereqs: null
+  from: "2.33"
   rank: 2
   povs: [horns]
   guests: null
+  previouslyOn: >
+    The newly-reformed Horns of Hammerad--now consisting of Ceria, Pisces, Ksmvr, and Yvlon--have obtained a map of the Ruins of Albez, and have decided
+    to raid the dungeon for treasure.
 -
   title: "3.03"
   url: "https://wanderinginn.com/2017/08/12/3-03/"
   prereqs: ["2.48"]
   rank: 1
-  povs: [erin]
-  guests: null
+  povs: [ryoka]
+  guests: [erin]
 -
   title: "3.04"
   url: "https://wanderinginn.com/2017/08/15/3-04/"
