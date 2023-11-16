@@ -902,21 +902,21 @@
   url: "https://wanderinginn.com/2017/08/15/3-04/"
   prereqs: p
   rank: 1
-  povs: null
-  guests: null
+  povs: [ryoka]
+  guests: [erin]
 -
   title: "3.05 L"
   url: "https://wanderinginn.com/2017/08/19/3-05-l/"
   prereqs: null
   rank: 3
-  povs: null
+  povs: [lyonette, pawn]
   guests: null
 -
   title: "1.00 D"
   url: "https://wanderinginn.com/2017/08/20/1-00-d/"
   from: "Interlude - The Great Ritual"
   rank: 4
-  povs: null
+  povs: [geneva]
   guests: null
 -
   title: "1.01 D"
@@ -924,7 +924,7 @@
   prereqs: p
   type: jump
   rank: 4
-  povs: null
+  povs: [geneva]
   guests: null
 -
   title: "3.06 L"
@@ -932,36 +932,36 @@
   prereqs: ["3.05 L"]
   type: jump
   rank: 3
-  povs: null
+  povs: [pawn]
   guests: null
 -
   title: "3.07 H"
   url: "https://wanderinginn.com/2017/08/26/3-07-h/"
   prereqs: ["3.02 H"]
   rank: 2
-  povs: null
+  povs: [horns]
   guests: null
 -
   title: "3.08 H"
   url: "https://wanderinginn.com/2017/08/29/3-08-h/"
   prereqs: p
   rank: 2
-  povs: null
+  povs: [horns]
   guests: null
 -
   title: "3.09"
   url: "https://wanderinginn.com/2017/09/02/3-09/"
   prereqs: ["3.04"]
   rank: 1
-  povs: null
-  guests: null
+  povs: [ryoka]
+  guests: [horns]
 -
   title: "3.10"
   url: "https://wanderinginn.com/2017/09/05/3-10/"
   prereqs: p
   rank: 1
-  povs: null
-  guests: null
+  povs: [ryoka]
+  guests: [horns, rags]
 -
   title: "3.11 E"
   url: "https://wanderinginn.com/2017/09/09/3-11-e/"
