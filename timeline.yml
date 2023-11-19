@@ -820,7 +820,7 @@
   prereqs: p
   rank: 1
   povs: [erin]
-  guests: [ryoka, toren]
+  guests: [erin, ryoka, toren]
 -
   title: "2.44"
   url: "https://wanderinginn.com/2017/07/15/2-37/"
@@ -831,7 +831,7 @@
 -
   title: "2.45"
   url: "https://wanderinginn.com/2017/07/18/2-38/"
-  prereqs: p
+  prereqs: ["2.43"]
   rank: 2
   povs: [ryoka]
   guests: null
