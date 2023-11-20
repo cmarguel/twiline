@@ -951,23 +951,23 @@
 -
   title: "3.09"
   url: "https://wanderinginn.com/2017/09/02/3-09/"
-  prereqs: ["3.04"]
-  rank: 1
+  from: "3.04"
+  rank: 4
   povs: [ryoka]
   guests: [horns]
 -
   title: "3.10"
   url: "https://wanderinginn.com/2017/09/05/3-10/"
   prereqs: p
-  rank: 1
+  rank: 2
   povs: [ryoka]
   guests: [horns, rags]
 -
   title: "3.11 E"
   url: "https://wanderinginn.com/2017/09/09/3-11-e/"
-  from: ["3.11 E"]
+  from: ["3.01 E"]
   rank: 3
-  povs: null
+  povs: [laken]
   guests: null
 -
   title: "3.12 E"
@@ -975,35 +975,35 @@
   prereqs: p
   type: jump
   rank: 3
-  povs: null
+  povs: [laken]
   guests: null
 -
   title: "3.13"
   url: "https://wanderinginn.com/2017/09/16/3-13/"
   prereqs: ["3.10"]
-  rank: 1
-  povs: null
+  rank: 2
+  povs: [ryoka]
   guests: null
 -
   title: "3.14"
   url: "https://wanderinginn.com/2017/09/19/3-14/"
-  prereqs: p
-  rank: 1
-  povs: null
+  prereqs: ["3.12 E", "3.13"]
+  rank: 3
+  povs: [ryoka, laken]
   guests: null
 -
   title: "3.15"
   url: "https://wanderinginn.com/2017/09/23/3-15/"
   prereqs: p
   rank: 1
-  povs: null
+  povs: [erin]
   guests: null
 -
   title: "3.16"
   url: "https://wanderinginn.com/2017/09/26/3-16/"
   prereqs: p
   rank: 1
-  povs: null
+  povs: [erin]
   guests: null
 -
   title: "3.17 T"
@@ -1039,14 +1039,14 @@
   url: "https://wanderinginn.com/2017/10/07/3-21-l/"
   from: "3.06 L"
   rank: 3
-  povs: null
+  povs: [pawn, lyonette]
   guests: null
 -
   title: "3.22 L"
   url: "https://wanderinginn.com/2017/10/10/3-22-l/"
   prereqs: p
   rank: 3
-  povs: null
+  povs: [pawn, lyonette]
   guests: null
 -
   title: "3.23 L"
@@ -1054,22 +1054,22 @@
   prereqs: p
   type: jump
   rank: 3
-  povs: null
+  povs: [lyonette, pawn]
   guests: null
 -
   title: "3.24"
   url: "https://wanderinginn.com/2017/10/17/3-24/"
   prereqs: ["3.16"]
   rank: 1
-  povs: null
-  guests: null
+  povs: [horns]
+  guests: [erin]
 -
   title: "3.25"
   url: "https://wanderinginn.com/2017/10/21/3-25/"
   prereqs: p
   rank: 1
-  povs: null
-  guests: null
+  povs: [erin]
+  guests: [horns]
 - 
   title: Winter Solstice
   heading: true
