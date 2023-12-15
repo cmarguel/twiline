@@ -973,7 +973,6 @@
   title: "3.12 E"
   url: "https://wanderinginn.com/2017/09/12/3-12-e/"
   prereqs: p
-  type: jump
   rank: 3
   povs: [laken]
   guests: null
@@ -991,10 +990,13 @@
   rank: 3
   povs: [ryoka, laken]
   guests: null
+  previouslyOn: >
+    Ryoka has been caught in the middle of a large assassination attempt on Magnolia's life. Laken has added the town of Riverfarm to his domain, following an 
+    avalanche in which he was able to help the town rescue their children with his abilities.
 -
   title: "3.15"
   url: "https://wanderinginn.com/2017/09/23/3-15/"
-  prereqs: p
+  from: "3.04"
   rank: 1
   povs: [erin]
   guests: null
@@ -1012,6 +1014,9 @@
   rank: 2
   povs: null
   guests: null
+  previouslyOn: >
+    Toren is wandering around aimlessly after stranding Erin in Celum. Meanwhile, thirteen goblins have been dispatched by Garen Redfang to kill Erin Solstice,
+    whose friendship with Rags he believes makes Rags weak. 
 -
   title: "3.18 T"
   url: "https://wanderinginn.com/2017/09/28/3-18-t/"
@@ -1078,36 +1083,35 @@
   url: "https://wanderinginn.com/2017/10/24/3-26-g/"
   prereqs: null
   rank: 2
-  povs: null
+  povs: [rags]
   guests: null
 -
   title: "3.27 M"
   url: "https://wanderinginn.com/2017/10/26/3-27-m/"
   prereqs: ["3.23 L"]
-  type: jump
   rank: 3
-  povs: null
+  povs: [mrsha]
   guests: null
 -
   title: "3.28 G"
   url: "https://wanderinginn.com/2017/10/28/3-28-g/"
   prereqs: ["3.26 G"]
   rank: 2
-  povs: null
+  povs: [rags]
   guests: null
 -
   title: "3.29 G"
   url: "https://wanderinginn.com/2017/10/31/3-29-g/"
   prereqs: p
   rank: 2
-  povs: null
+  povs: [rags]
   guests: null
 -
   title: "3.30"
   url: "https://wanderinginn.com/2017/11/04/3-30/"
   prereqs: ["3.25"]
   rank: 1
-  povs: null
+  povs: [erin]
   guests: null
 -
   title: "3.31 G"
@@ -1115,7 +1119,7 @@
   prereqs: ["3.29 G"]
   type: jump
   rank: 2
-  povs: null
+  povs: [rags]
   guests: null
 -
   title: "Interlude - Wistram Days (Pt. 1)"
@@ -1169,86 +1173,96 @@
 -
   title: "3.32"
   url: "https://wanderinginn.com/2017/11/25/3-32/"
-  prereqs: ["3.30"]
+  prereqs: ["3.27 M", "3.30"]
   rank: 1
-  povs: null
+  povs: [erin, lyonette]
   guests: null
+  previouslyOn: >
+    After an extended stay in Celum, Erin is finally on her way back to The Wandering Inn, which has been dutifully maintained by Lyonette and Mrsha in Erin's absence.
+    Ceria has just finished telling Erin about her and Pisces' days in Wistram on the long road home.
+
 -
   title: "3.33"
   url: "https://wanderinginn.com/2017/11/28/3-33/"
   prereqs: p
   rank: 1
-  povs: null
+  povs: [erin]
   guests: null
 -
   title: "3.34"
   url: "https://wanderinginn.com/2017/12/02/3-34/"
   prereqs: p
   rank: 1
-  povs: null
+  povs: [erin]
   guests: null
 -
   title: "3.35"
   url: "https://wanderinginn.com/2017/12/05/3-35/"
   prereqs: p
-  rank: 1
-  povs: null
-  guests: null
+  rank: 2
+  from: "3.14"
+  povs: [ryoka]
+  guests: [erin, laken]
+  previouslyOn: >
+    Ryoka still hasn't left for Invisril to get the Horns' items appraised, and is cooling down after surviving the attack at Magnolia's mansion. Laken is in Invisril,
+    hoping to find something useful for his new domain.
 -
   title: "3.36"
   url: "https://wanderinginn.com/2017/12/09/3-36/"
   prereqs: p
-  rank: 1
-  povs: null
+  rank: 2
+  povs: [ryoka, laken]
   guests: null
 -
   title: "3.37"
   url: "https://wanderinginn.com/2017/12/12/3-37/"
   prereqs: p
-  rank: 1
-  povs: null
+  rank: 2
+  povs: [ryoka]
   guests: null
 -
   title: "3.38"
   url: "https://wanderinginn.com/2017/12/16/3-38/"
-  prereqs: p
+  prereqs: ["3.34"]
   rank: 1
-  povs: null
+  povs: [erin]
   guests: null
+  previouslyOn: >
+    Erin and many adventurers are still in Esthelm, helping with relief efforts.
 -
   title: "3.39"
   url: "https://wanderinginn.com/2017/12/19/3-39/"
   prereqs: p
   rank: 1
-  povs: null
+  povs: [erin]
   guests: null
 -
   title: "3.40"
   url: "https://wanderinginn.com/2017/12/23/3-40/"
-  prereqs: p
-  rank: 1
-  povs: null
-  guests: null
+  prereqs: ["3.37"]
+  rank: 2
+  povs: [ryoka]
+  guests: [laken]
 -
   title: "3.41"
   url: "https://wanderinginn.com/2017/12/25/3-41/"
-  prereqs: p
+  prereqs: ["3.39", "3.40"]
   rank: 1
-  povs: null
+  povs: [erin, ryoka]
   guests: null
 -
   title: "3.42"
   url: "https://wanderinginn.com/2017/12/26/3-42/"
   prereqs: p
   rank: 1
-  povs: null
+  povs: [erin]
   guests: null
 -
   title: "Interlude - Winter Solstice"
   url: "https://wanderinginn.com/2017/12/30/interlude-4/"
   prereqs: p
   rank: 1
-  povs: null
+  povs: [erin, ryoka]
   guests: null
 - 
   title: The Wandering Inn - Volume 4 - The Last Light
